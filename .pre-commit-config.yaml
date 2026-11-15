@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.6
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: no-secrets
+        name: no API keys in tracked files
+        entry: python3 scripts/check_no_secrets.py
+        language: system
+        types: [text]
+      - id: ty
+        name: ty check
+        entry: uv run ty check packages
+        language: system
+        pass_filenames: false
+      - id: pytest
+        name: pytest
+        entry: uv run pytest -q
+        language: system
+        pass_filenames: false

@@ -1,0 +1,32 @@
+# A worked example. Copy it, rename it, and change the gene.
+#
+# Design rules, which the validator checks:
+#   - one question, one judgment; several Nouls beat one multi-label Choice
+#   - every Choice needs an escape option, or the model is forced to be wrong
+#   - ask about the text in front of it, never about the wider literature
+
+name = "example-phosphatase"
+version = "1"
+
+[questions.studies_target]
+type = "noul"
+instructions = """The abstract reports experimental work on the protein \
+phosphatase PPP1CC (also written PP1-gamma or PP1CC)."""
+
+[questions.is_primary_research]
+type = "noul"
+instructions = """The abstract describes primary research, not a review, \
+editorial, comment or correction."""
+
+[questions.evidence_strength]
+type = "choice"
+instructions = """The strongest evidence the abstract offers for the target \
+protein having the stated function."""
+options = ["direct_experimental", "correlative", "computational", "none", "manual_review"]
+
+[questions.relevance]
+type = "score"
+instructions = """How relevant is this paper to a project on the cell-cycle \
+role of this phosphatase? 1 = irrelevant, 5 = directly on topic."""
+min = 1
+max = 5

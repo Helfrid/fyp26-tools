@@ -1,0 +1,63 @@
+[project]
+name = "fyp26-tools"
+version = "0.1.0"
+description = "Literature-screening tools for FYP26: typed abstract scanning, full-paper analysis and accuracy evaluation"
+readme = "README.md"
+authors = [{ name = "hh65", email = "hh65@sussex.ac.uk" }]
+requires-python = ">=3.12"
+dependencies = [
+    "abstract-scanner",
+    "common-utils",
+    "jev-client",
+]
+
+# The workspace root is not itself a package: it exists to pin the shared dev
+# toolchain and to list the members. Code lives only in packages/.
+[tool.uv]
+package = false
+exclude-newer = "7 days"
+
+[tool.uv.workspace]
+members = [
+    "packages/common_utils",
+    "packages/jev_client",
+    "packages/abstract_scanner",
+]
+
+[tool.uv.sources]
+common-utils = { workspace = true, editable = true }
+jev-client = { workspace = true, editable = true }
+abstract-scanner = { workspace = true, editable = true }
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.18.0",
+    "pre-commit>=4.6.2",
+    "pytest>=9.1.1",
+    "ruff>=0.16.6",
+    "ty>=0.0.78",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["packages/*/src", "src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/*" = ["E501"]
+
+[tool.ty.environment]
+python-version = "3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["packages"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+update_changelog_on_bump = true
+version_files = ["pyproject.toml:^version"]

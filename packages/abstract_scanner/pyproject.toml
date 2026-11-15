@@ -1,0 +1,20 @@
+[project]
+name = "abstract-scanner"
+version = "0.1.0"
+description = "Screen PubMed abstracts with typed Jev questions, reproducibly and within a spend ceiling"
+readme = "README.md"
+authors = [{ name = "hh65", email = "hh65@sussex.ac.uk" }]
+requires-python = ">=3.12"
+dependencies = [
+    "common-utils",
+    "jev-client",
+    "loguru>=0.7.3",
+    "typer>=0.27.2",
+]
+
+[project.scripts]
+abstract-scanner = "abstract_scanner.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"

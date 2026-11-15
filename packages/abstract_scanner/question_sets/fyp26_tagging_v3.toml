@@ -1,0 +1,66 @@
+# FYP26 abstract classification, version 3 — the SAME four fields the students
+# classified, so that model and student answers are directly comparable.
+#
+# Wording is lifted from the handbook (docs/phases/1-literature/2-evaluation.md)
+# and the schema descriptions (reference/tagging-schema.json). Do not "improve"
+# it: any change makes the comparison measure something other than agreement.
+#
+# IMPORTANT — skip logic is NOT encoded here.
+#   The student rubric says: if is_tagging_paper is `no`, skip the other three
+#   fields. Jev evaluates every question in isolation and in parallel, so it
+#   will answer all four regardless. Apply the gate when scoring: where
+#   is_tagging_paper == "no", discard the other three answers before comparing,
+#   exactly as a student would have left them blank.
+
+name = "fyp26-tagging"
+version = "3"
+
+[questions.is_tagging_paper]
+type = "choice"
+instructions = """Does the study attach a degron or another tag to a protein?
+
+yes: the study attaches a degron or another tag to a protein.
+no: it does not. A natural degron motif, or a small-molecule degrader alone, \
+does not count.
+unsure: the abstract does not settle whether tagging occurred.
+
+Judge only from the title and abstract."""
+options = ["yes", "no", "unsure"]
+
+[questions.tag_type]
+type = "choice"
+instructions = """Which category of tag is used?
+
+AID includes AID2 and mAID. dTag covers dTAG. SMASH covers SMASh. bromo covers \
+BromoTag.
+other: a stated tag outside those families, including fluorescent or epitope \
+tags.
+multiple: experimental use or comparison of more than one tag category, such \
+as dTag and BromoTag. Background mentions do not count; AID and AID2 together \
+remain AID.
+unclear: the category cannot be established from the abstract."""
+options = ["AID", "dTag", "SMASH", "bromo", "other", "multiple", "unclear"]
+
+[questions.locus_strategy]
+type = "choice"
+instructions = """Is the tag placed at the protein's own locus, or carried on \
+a separate construct?
+
+endogenous: tagging at the native locus.
+exogenous: an ectopic expression construct, transfected or integrated. \
+Exogenous does not require measured overexpression.
+unclear: one option cannot represent the abstract, including mixed locus \
+strategies.
+
+CRISPR alone does not prove endogenous tagging."""
+options = ["endogenous", "exogenous", "unclear"]
+
+[questions.terminus]
+type = "choice"
+instructions = """At which end of the protein is the tag placed?
+
+C-term or N-term as stated in the abstract.
+unclear: the position is missing, internal, or mixed.
+
+Do not infer a terminus from what would make biological sense."""
+options = ["C-term", "N-term", "unclear"]
