@@ -67,36 +67,64 @@ class BudgetExceeded(JevError):
 # into a run manifest alongside the results.
 
 
-def noul(instructions: str) -> dict[str, Any]:
+def noul(
+    instructions: str,
+    criteria: dict[str, str | None] | None = None,
+) -> dict[str, Any]:
     """An independent 0-1 judgment ("how true is this of the state?").
 
     Prefer several Nouls over one multi-label Choice: they are scored
     independently, so adding a label later does not shift the others.
+    ``criteria`` optionally describes what ``true`` and ``false`` mean.
     """
-    return {"type": "noul", "instructions": instructions}
+    question: dict[str, Any] = {"type": "noul", "instructions": instructions}
+    if criteria:
+        unknown = set(criteria) - {"true", "false"}
+        if unknown:
+            raise ValueError(
+                f"noul criteria keys must be 'true'/'false', got {sorted(unknown)}"
+            )
+        question["criteria"] = criteria
+    return question
 
 
-def choice(instructions: str, options: list[str]) -> dict[str, Any]:
-    """A single pick from a closed list.
+def choice(
+    instructions: str,
+    criteria: dict[str, str | None] | list[str],
+) -> dict[str, Any]:
+    """A single pick from a closed set of named options.
 
-    Always include an explicit escape hatch (``"none"``, ``"not_stated"`` or
-    ``"manual_review"``) so the model is never forced into a wrong bucket.
+    The API takes ``criteria`` as an object mapping each option name to a
+    description, where the description may be ``None`` when the name speaks
+    for itself. A plain list of names is accepted here and expanded to that
+    form, because most question sets do not need per-option prose.
+
+    Always include an explicit escape option (``"none"``, ``"unsure"``,
+    ``"unclear"``, ``"not_stated"`` or ``"manual_review"``) so the model is
+    never forced into a wrong bucket.
     """
-    if len(options) < 2:
-        raise ValueError("a choice needs at least two options")
-    return {"type": "choice", "instructions": instructions, "options": options}
+    if isinstance(criteria, list):
+        criteria = {name: None for name in criteria}
+    if not 1 <= len(criteria) <= 255:
+        raise ValueError(f"choice needs 1-255 options, got {len(criteria)}")
+    if len(criteria) < 2:
+        raise ValueError("a choice needs at least two options to be meaningful")
+    return {"type": "choice", "instructions": instructions, "criteria": criteria}
 
 
-def score(instructions: str, minimum: int = 1, maximum: int = 5) -> dict[str, Any]:
-    """An ordinal rating between ``minimum`` and ``maximum``."""
-    if minimum >= maximum:
-        raise ValueError("score needs minimum < maximum")
-    return {
-        "type": "score",
-        "instructions": instructions,
-        "min": minimum,
-        "max": maximum,
-    }
+def score(instructions: str, criteria: list[str]) -> dict[str, Any]:
+    """An ordinal rating over named levels, lowest first.
+
+    ``criteria`` is an ordered list of level descriptions; position sets the
+    score, **starting at 0**. So three levels score 0, 1, 2 — not 1-5. The
+    returned score may be fractional, since it is the expectation over the
+    probability distribution rather than the top pick.
+    """
+    if not 1 <= len(criteria) <= 10:
+        raise ValueError(f"score needs 1-10 levels, got {len(criteria)}")
+    if len(criteria) < 2:
+        raise ValueError("a score needs at least two levels to be meaningful")
+    return {"type": "score", "instructions": instructions, "criteria": criteria}
 
 
 @dataclass(frozen=True)
@@ -106,6 +134,7 @@ class Answer:
     ``value`` is the answer proper (a float for noul/score, a string for
     choice); ``confidence`` is the model's own confidence where it reports one
     (choice, score, box) and ``None`` for noul, which *is* a probability.
+    ``legend`` maps a score's integer levels back to their descriptions.
     ``raw`` keeps the untouched payload so nothing is lost by normalising.
     """
 
@@ -113,6 +142,7 @@ class Answer:
     value: Any
     confidence: float | None = None
     probabilities: dict[str, float] | None = None
+    legend: dict[str, str] | None = None
     raw: dict[str, Any] = field(default_factory=dict, repr=False)
 
     @classmethod
@@ -128,6 +158,7 @@ class Answer:
             value=value,
             confidence=payload.get("confidence"),
             probabilities=payload.get("probabilities"),
+            legend=payload.get("legend"),
             raw=payload,
         )
 

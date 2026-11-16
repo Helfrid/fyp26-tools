@@ -22,6 +22,21 @@ downstream is identical, including the fingerprint::
     type = "choice"
     instructions = "Strongest evidence for a direct role"
     options = ["direct", "indirect", "none", "manual_review"]
+
+A ``choice`` may instead give a description per option, which is the API's own
+form and usually worth it when the names alone are ambiguous::
+
+    [questions.evidence.criteria]
+    direct = "The authors measured it themselves"
+    none = "The abstract does not say"
+
+A ``score`` takes ``levels``, an ordered list lowest first. **Position sets
+the score, starting at 0** — three levels score 0, 1, 2, not 1 to 3::
+
+    [questions.relevance]
+    type = "score"
+    instructions = "How relevant is this paper?"
+    levels = ["Irrelevant", "Tangential", "Directly on topic"]
 """
 
 from __future__ import annotations
@@ -36,7 +51,14 @@ from jev_client import choice, noul, score
 
 # Options that let the model decline rather than be forced into a wrong bucket.
 ESCAPE_OPTIONS = frozenset(
-    {"none", "not_stated", "unclear", "insufficient_evidence", "manual_review"}
+    {
+        "none",
+        "not_stated",
+        "unclear",
+        "unsure",
+        "insufficient_evidence",
+        "manual_review",
+    }
 )
 
 BUILDERS = {"noul": noul, "choice": choice, "score": score}
@@ -71,8 +93,32 @@ class QuestionSet:
         return f"{self.name} v{self.version} ({self.fingerprint})"
 
 
+def _criteria_from(spec: dict, qid: str) -> dict[str, str | None] | list[str]:
+    """Accept either ``options = [...]`` or a ``criteria`` table/array.
+
+    ``options`` is the short form for when the option names speak for
+    themselves; ``criteria`` is the API's own form and allows a description
+    per option. Both end up as the same wire payload.
+    """
+    if "criteria" in spec:
+        criteria = spec["criteria"]
+        if isinstance(criteria, dict):
+            return {
+                str(k): (None if v is None else str(v)) for k, v in criteria.items()
+            }
+        if isinstance(criteria, list):
+            return [str(v) for v in criteria]
+        raise QuestionSetError(f"question {qid!r}: criteria must be a table or list")
+    options = spec.get("options")
+    if isinstance(options, list):
+        return [str(o) for o in options]
+    raise QuestionSetError(
+        f"question {qid!r}: needs options = [...] or a criteria table"
+    )
+
+
 def _build(qid: str, spec: dict) -> tuple[dict, list[str]]:
-    """Turn one TOML question into a wire dict, collecting design warnings."""
+    """Turn one authored question into a wire dict, collecting design warnings."""
     kind = spec.get("type")
     if kind not in BUILDERS:
         raise QuestionSetError(
@@ -85,23 +131,24 @@ def _build(qid: str, spec: dict) -> tuple[dict, list[str]]:
     warnings: list[str] = []
     try:
         if kind == "noul":
-            built = noul(str(instructions))
+            built = noul(str(instructions), spec.get("criteria"))
         elif kind == "choice":
-            options = spec.get("options")
-            if not isinstance(options, list):
-                raise QuestionSetError(f"question {qid!r}: choice needs options")
-            built = choice(str(instructions), [str(o) for o in options])
-            if not ESCAPE_OPTIONS & {str(o).lower() for o in options}:
+            criteria = _criteria_from(spec, qid)
+            built = choice(str(instructions), criteria)
+            names = {str(n).lower() for n in criteria}
+            if not ESCAPE_OPTIONS & names:
                 warnings.append(
                     f"{qid}: no escape option — the model is forced to pick one "
-                    f"of {options}. Add one of {sorted(ESCAPE_OPTIONS)}."
+                    f"of {sorted(names)}. Add one of {sorted(ESCAPE_OPTIONS)}."
                 )
         else:
-            built = score(
-                str(instructions),
-                minimum=int(spec.get("min", 1)),
-                maximum=int(spec.get("max", 5)),
-            )
+            levels = spec.get("levels") or spec.get("criteria")
+            if not isinstance(levels, list):
+                raise QuestionSetError(
+                    f"question {qid!r}: score needs levels = [...], an ordered "
+                    f"list of level descriptions (lowest first)"
+                )
+            built = score(str(instructions), [str(level) for level in levels])
     except ValueError as exc:
         raise QuestionSetError(f"question {qid!r}: {exc}") from exc
     return built, warnings

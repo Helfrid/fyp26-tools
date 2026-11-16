@@ -1,0 +1,452 @@
+[
+  {
+    "item_id": "s5_029",
+    "pmid": "39251788",
+    "title": "NSD2 is a requisite subunit of the AR/FOXA1 neo-enhanceosome in promoting prostate tumorigenesis.",
+    "abstract": "Androgen receptor (AR) is a ligand-responsive transcription factor that drives terminal differentiation of the prostatic luminal epithelia. By contrast, in tumors originating from these cells, AR chromatin occupancy is extensively reprogrammed to activate malignant phenotypes, the molecular mechanisms of which remain unknown. Here, we show that tumor-specific AR enhancers are critically reliant on H3K36 dimethyltransferase activity of NSD2. NSD2 expression is abnormally induced in prostate cancer, where its inactivation impairs AR transactivation potential by disrupting over 65% of its cistrome. NSD2-dependent AR sites distinctively harbor the chimeric FOXA1:AR half-motif, which exclusively comprise tumor-specific AR enhancer circuitries defined from patient specimens. NSD2 inactivation also engenders increased dependency on the NSD1 paralog, and a dual NSD1/2 PROTAC degrader is preferentially cytotoxic in AR-dependent prostate cancer models. Altogether, we characterize NSD2 as an essential AR neo-enhanceosome subunit that enables its oncogenic activity, and position NSD1/2 as viable co-targets in advanced prostate cancer.",
+    "journal": "Nat Genet",
+    "year": 2024,
+    "doi": "10.1038/s41588-024-01893-6"
+  },
+  {
+    "item_id": "s5_047",
+    "pmid": "38833589",
+    "title": "Development of a rapamycin-inducible protein-knockdown system in the unicellular red alga Cyanidioschyzon merolae.",
+    "abstract": "An inducible protein-knockdown system is highly effective for investigating the functions of proteins and mechanisms essential for the survival and growth of organisms. However, this technique is not available in photosynthetic eukaryotes. The unicellular red alga Cyanidioschyzon merolae possesses a very simple cellular and genomic architecture and is genetically tractable but lacks RNA interference machinery. In this study, we developed a protein-knockdown system in this alga. The constitutive system utilizes the destabilizing activity of the FK506-binding protein 12 (FKBP12)-rapamycin-binding (FRB) domain of human target of rapamycin kinase or its derivatives to knock down target proteins. In the inducible system, rapamycin treatment induces the heterodimerization of the human FRB domain fused to the target proteins with the human FKBP fused to S-phase kinase-associated protein 1 or Cullin 1, subunits of the SCF E3 ubiquitin ligase. This results in the rapid degradation of the target proteins through the ubiquitin-proteasome pathway. With this system, we successfully degraded endogenous essential proteins such as the chloroplast division protein dynamin-related protein 5B and E2 transcription factor, a regulator of the G1/S transition, within 2 to 3\u2005h after rapamycin administration, enabling the assessment of resulting phenotypes. This rapamycin-inducible protein-knockdown system contributes to the functional analysis of genes whose disruption leads to lethality.",
+    "journal": "Plant Physiol",
+    "year": 2024,
+    "doi": "10.1093/plphys/kiae316"
+  },
+  {
+    "item_id": "s5_042",
+    "pmid": "39309499",
+    "title": "SARS-CoV-2 ORF10 hijacking ubiquitination machinery reveals potential unique drug targeting sites.",
+    "abstract": "Viruses often manipulate ubiquitination pathways to facilitate their replication and pathogenesis. CUL2ZYG11B known as the substrate receptor of cullin-2 RING E3 ligase, is bound by SARS-CoV-2 ORF10 to increase its E3 ligase activity, leading to degradation of IFT46, a protein component of the intraflagellar transport (IFT) complex B. This results in dysfunctional cilia, which explains certain symptoms that are specific to COVID-19. However, the precise molecular mechanism of how ORF10 recognizes CUL2ZYG11B remains unknown. Here, we determined the crystal structure of CUL2ZYG11B complexed with the N-terminal extension (NTE) of SARS-CoV-2 ORF10 (2.9\u00a0\u00c5). The structure reveals that the ORF10 N-terminal heptapeptide (NTH) mimics the Gly/N-degron to bind CUL2ZYG11B. Mutagenesis studies identified key residues within ORF10 that are key players in its interaction with CUL2ZYG11B both in ITC assay and in\u00a0vivo cells. In addition, we prove that enhancement of CUL2ZYG11B activity for IFT46 degradation by which ORF10-mediated correlates with the binding affinity between ORF10 and CUL2ZYG11B. Finally, we used a Global Protein Stability system to show that the NTH of ORF10 mimics the Gly/N-degron motif, thereby binding competitively to CUL2ZYG11B and inhibiting the degradation of target substrates bearing the Gly/N-degron motif. Overall, this study sheds light on how SARS-CoV-2 ORF10 exploits the ubiquitination machinery for proteasomal degradation, and offers valuable insights for optimizing PROTAC-based drug design based on NTH CUL2ZYG11B interaction, while pinpointing a promising target for the development of treatments for COVID-19.",
+    "journal": "Acta Pharm Sin B",
+    "year": 2024,
+    "doi": "10.1016/j.apsb.2024.05.018"
+  },
+  {
+    "item_id": "s5_021",
+    "pmid": "38260640",
+    "title": "Targeting transcription factors through an IMiD independent zinc finger domain.",
+    "abstract": "Immunomodulatory imide drugs (IMiDs) degrade specific C2H2 zinc finger degrons in transcription factors, making them effective against certain cancers. SALL4, a cancer driver, contains seven C2H2 zinc fingers in four clusters, including an IMiD degron in zinc finger cluster two (ZFC2). Surprisingly, IMiDs do not inhibit growth of SALL4 expressing cancer cells. To overcome this limit, we focused on a non-IMiD degron, SALL4 zinc finger cluster four (ZFC4). By combining AlphaFold and the ZFC4-DNA crystal structure, we identified a potential ZFC4 drug pocket. Utilizing an in silico docking algorithm and cell viability assays, we screened chemical libraries and discovered SH6, which selectively targets SALL4-expressing cancer cells. Mechanistic studies revealed that SH6 degrades SALL4 protein through the CUL4A/CRBN pathway, while deletion of ZFC4 abolished this activity. Moreover, SH6 led to significant 62% tumor growth inhibition of SALL4+ xenografts in vivo and demonstrated good bioavailability in pharmacokinetic studies. In summary, these studies represent a new approach for IMiD independent drug discovery targeting C2H2 transcription factors in cancer.",
+    "journal": "bioRxiv",
+    "year": 2024,
+    "doi": "10.1101/2024.01.03.574032"
+  },
+  {
+    "item_id": "s5_025",
+    "pmid": "33689749",
+    "title": "Fast-acting chemical tools to delineate causality in transcriptional control.",
+    "abstract": "Multi-dimensional omics profiling continues to illuminate the complexity of cellular processes. Because of difficult mechanistic interpretation of phenotypes induced by slow perturbation, fast experimental setups are increasingly used to dissect causal interactions directly in cells. Here we review a growing body of studies that leverage rapid pharmacological perturbation to delineate causality in gene control. When coupled with kinetically matched readouts, fast chemical genetic tools allow recording of primary phenotypes before confounding secondary effects manifest. The toolbox encompasses directly acting probes, such as active-site inhibitors and proteolysis-targeting chimeras, as well as strategies using genetic engineering to render target proteins chemically tractable, such as analog-sensitive and degron systems. We anticipate that extrapolation of these concepts to single-cell setups will further transform our mechanistic understanding of transcriptional control in the future. Importantly, the concept of leveraging speed to derive causality should be broadly applicable to many aspects of biological regulation.",
+    "journal": "Mol Cell",
+    "year": 2021,
+    "doi": "10.1016/j.molcel.2021.02.015"
+  },
+  {
+    "item_id": "s5_009",
+    "pmid": "29167380",
+    "title": "Self-oligomerization regulates stability of survival motor neuron protein isoforms by sequestering an SCFSlmb degron.",
+    "abstract": "Spinal muscular atrophy (SMA) is caused by homozygous mutations in human\u00a0SMN1 Expression of a duplicate gene (SMN2) primarily results in skipping of exon 7 and production of an unstable protein isoform, SMN\u03947. Although\u00a0SMN2\u00a0exon skipping is the principal contributor to SMA severity, mechanisms governing stability of survival motor neuron (SMN) isoforms are poorly understood. We used a\u00a0Drosophila\u00a0model system and label-free proteomics to identify the SCFSlmb\u00a0ubiquitin E3 ligase complex as a novel SMN binding partner. SCFSlmb\u00a0interacts with a phosphor degron embedded within the human and fruitfly SMN YG-box oligomerization domains. Substitution of a conserved serine (S270A) interferes with SCFSlmb\u00a0binding and stabilizes SMN\u03947. SMA-causing missense mutations that block multimerization of full-length SMN are also stabilized in the degron mutant background. Overexpression of SMN\u03947S270A, but not wild-type (WT) SMN\u03947, provides a protective effect in SMA model mice and human motor neuron cell culture systems. Our findings support a model wherein the\u00a0degron is exposed when SMN is monomeric and sequestered when SMN forms higher-order multimers.",
+    "journal": "Mol Biol Cell",
+    "year": 2018,
+    "doi": "10.1091/mbc.E17-11-0627"
+  },
+  {
+    "item_id": "s5_002",
+    "pmid": "36990220",
+    "title": "Detection of N\u03b1-terminally formylated native proteins by a pan-N-formyl methionine-specific antibody.",
+    "abstract": "N-formyl methionine (fMet)-containing proteins are produced in bacteria, eukaryotic organelles mitochondria and plastids, and even in cytosol. However, N\u03b1-terminally formylated proteins have been poorly characterized because of the lack of appropriate tools to detect fMet independently of downstream proximal sequences. Using a fMet-Gly-Ser-Gly-Cys peptide as an antigen, we generated a pan-fMet-specific rabbit polyclonal antibody called anti-fMet. The raised anti-fMet recognized universally and sequence context-independently Nt-formylated proteins in bacterial, yeast, and human cells as determined by a peptide spot array, dot blotting, and immunoblotting. We anticipate that the anti-fMet antibody will be broadly used to enable an understanding of the poorly explored functions and mechanisms of Nt-formylated proteins in various organisms.",
+    "journal": "J Biol Chem",
+    "year": 2023,
+    "doi": "10.1016/j.jbc.2023.104652"
+  },
+  {
+    "item_id": "s5_041",
+    "pmid": "34228767",
+    "title": "Varicella-zoster virus early infection but not complete replication is required for the induction of chronic hypersensitivity in rat models of postherpetic neuralgia.",
+    "abstract": "Herpes zoster, the result of varicella-zoster virus (VZV) reactivation, is frequently complicated by difficult-to-treat chronic pain states termed postherpetic neuralgia (PHN). While there are no animal models of VZV-induced pain following viral reactivation, subcutaneous VZV inoculation of the rat causes long-term nocifensive behaviors indicative of mechanical and thermal hypersensitivity. Previous studies using UV-inactivated VZV in the rat model suggest viral gene expression is required for the development of pain behaviors. However, it remains unclear if complete infection processes are needed for VZV to induce hypersensitivity in this host. To further assess how gene expression and replication contribute, we developed and characterized three replication-conditional VZV using a protein degron system to achieve drug-dependent stability of essential viral proteins. Each virus was then assessed for induction of hypersensitivity in rats under replication permissive and nonpermissive conditions. VZV with a degron fused to ORF9p, a late structural protein that is required for virion assembly, induced nocifensive behaviors under both replication permissive and nonpermissive conditions, indicating that complete VZV replication is dispensable for the induction of hypersensitivity. This conclusion was confirmed by showing that a genetic deletion recombinant VZV lacking DNA packaging protein ORF54p still induced prolonged hypersensitivities in the rat. In contrast, VZV with a degron fused to the essential IE4 or IE63 proteins, which are involved in early gene regulation of expression, induced nocifensive behaviors only under replication permissive conditions, indicating importance of early gene expression events for induction of hypersensitivity. These data establish that while early viral gene expression is required for the development of nocifensive behaviors in the rat, complete replication is dispensable. We postulate this model reflects events leading to clinical PHN, in which a population of ganglionic neurons become abortively infected with VZV during reactivation and survive, but host signaling becomes altered in order to transmit ongoing pain.",
+    "journal": "PLoS Pathog",
+    "year": 2021,
+    "doi": "10.1371/journal.ppat.1009689"
+  },
+  {
+    "item_id": "s5_040",
+    "pmid": "39399594",
+    "title": "Acutely Modifying Phosphatidylinositol Phosphates on Endolysosomes Using Chemically Inducible Dimerization Systems.",
+    "abstract": "Phosphoinositides are rare membrane lipids that mediate cell signaling and membrane dynamics. PI(4)P and PI(3)P are two major phosphoinositides crucial for endolysosomal functions and dynamics, making them the lipids of interest in many studies. The acute modulation of phosphoinositides at a given organelle membrane can reveal important insights into their cellular function. Indeed, the localized depletion of PI(4)P and PI(3)P is a viable tool to assess the importance of these phosphoinositides in various experimental conditions. Here, we describe a live imaging method to acutely deplete PI(4)P and PI(3)P on endolysosomes. The depletion assay utilizes the GAI-GID1 or the FRB-FKBP inducible dimerization system to target the catalytic domain of the PI(4)P phosphatase, Sac1, or the PI(3)P phosphatase domain of MTM1 to the endolysosome for localized depletion of these phosphoinositides. By using the fluorescently tagged biosensors, 2xP4M and PX, we can validate and monitor the depletion of PI(4)P and PI(3)P, respectively, on endolysosomes in real-time. We discuss a method for normalizing the fluorescence measurements to appropriate the relative amount of these phosphoinositides in the organellar membranes (endolysosomes), which is required for monitoring PI(4)P or PI(3)P levels during the acute depletion assay. Since the localization of the dimerization partners is specified by the membrane targeting signal, our protocol will be useful for studying the signaling and functions of phosphoinositides at any membrane. Key features \u2022 Acute depletion and real-time monitoring of PI(3)P and PI(4)P on the endolysosomal membrane using chemically inducible dimerization systems. \u2022 Modifiable and adaptable to modulate other phosphoinositides on different organellar membranes.",
+    "journal": "Bio Protoc",
+    "year": 2024,
+    "doi": "10.21769/BioProtoc.5078"
+  },
+  {
+    "item_id": "s5_043",
+    "pmid": "30789902",
+    "title": "Prolyl isomerization of FAAP20 catalyzed by PIN1 regulates the Fanconi anemia pathway.",
+    "abstract": "The Fanconi Anemia (FA) pathway is a multi-step DNA repair process at stalled replication forks in response to DNA interstrand cross-links (ICLs). Pathological mutation of key FA genes leads to the inherited disorder FA, characterized by progressive bone marrow failure and cancer predisposition. The study of FA is of great importance not only to children suffering from FA but also as a model to study cancer pathogenesis in light of genome instability among the general population. FANCD2 monoubiquitination by the FA core complex is an essential gateway that connects upstream DNA damage signaling to enzymatic steps of repair. FAAP20 is a key component of the FA core complex, and regulated proteolysis of FAAP20 mediated by the ubiquitin E3 ligase SCFFBW7 is critical for maintaining the integrity of the FA complex and FA pathway signaling. However, upstream regulatory mechanisms that govern this signaling remain unclear. Here, we show that PIN1, a phosphorylation-specific prolyl isomerase, regulates the integrity of the FA core complex, thus FA pathway activation. We demonstrate that PIN1 catalyzes cis-trans isomerization of the FAAP20 pSer48-Pro49 motif and promotes FAAP20 stability. Mechanistically, PIN1-induced conformational change of FAAP20 enhances its interaction with the PP2A phosphatase to counteract SCFFBW7-dependent proteolytic signaling at the phosphorylated degron motif. Accordingly, PIN1 deficiency impairs FANCD2 activation and the DNA ICL repair process. Together, our study establishes PIN1-dependent prolyl isomerization as a new regulator of the FA pathway and genomic integrity.",
+    "journal": "PLoS Genet",
+    "year": 2019,
+    "doi": "10.1371/journal.pgen.1007983"
+  },
+  {
+    "item_id": "s5_011",
+    "pmid": "27190215",
+    "title": "Ubiquitin-Like Proteasome System Represents a Eukaryotic-Like Pathway for Targeted Proteolysis in Archaea.",
+    "abstract": "UNLABELLED: The molecular mechanisms of targeted proteolysis in archaea are poorly understood, yet they may have deep evolutionary roots shared with the ubiquitin-proteasome system of eukaryotic cells. Here, we demonstrate in archaea that TBP2, a TATA-binding protein (TBP) modified by ubiquitin-like isopeptide bonds, is phosphorylated and targeted for degradation by proteasomes. Rapid turnover of TBP2 required the functions of UbaA (the E1/MoeB/ThiF homolog of archaea), AAA ATPases (Cdc48/p97 and Rpt types), a type 2 JAB1/MPN/MOV34 metalloenzyme (JAMM/MPN+) homolog (JAMM2), and 20S proteasomes. The ubiquitin-like protein modifier small archaeal modifier protein 2 (SAMP2) stimulated the degradation of TBP2, but SAMP2 itself was not degraded. Analysis of the TBP2 fractions that were not modified by ubiquitin-like linkages revealed that TBP2 had multiple N termini, including Met1-Ser2, Ser2, and Met1-Ser2(p) [where (p) represents phosphorylation]. The evidence suggested that the Met1-Ser2(p) form accumulated in cells that were unable to degrade TBP2. We propose a model in archaea in which the attachment of ubiquitin-like tags can target proteins for degradation by proteasomes and be controlled by N-terminal degrons. In support of a proteolytic mechanism that is energy dependent and recycles the ubiquitin-like protein tags, we find that a network of AAA ATPases and a JAMM/MPN+ metalloprotease are required, in addition to 20S proteasomes, for controlled intracellular proteolysis.\n\nIMPORTANCE: This study advances the fundamental knowledge of signal-guided proteolysis in archaea and sheds light on components that are related to the ubiquitin-proteasome system of eukaryotes. In archaea, the ubiquitin-like proteasome system is found to require function of an E1/MoeB/ThiF homolog, a type 2 JAMM/MPN+ metalloprotease, and a network of AAA ATPases for the targeted destruction of proteins. We provide evidence that the attachment of the ubiquitin-like protein is controlled by an N-terminal degron and stimulates proteasome-mediated proteolysis.",
+    "journal": "mBio",
+    "year": 2016,
+    "doi": "10.1128/mBio.00379-16"
+  },
+  {
+    "item_id": "s5_015",
+    "pmid": "41194602",
+    "title": "Ketoboronate as a Minimal Covalent-Reversible Tag for Targeted Lysosomal Degradation of Extracellular and Membrane Proteins.",
+    "abstract": "Extracellular and membrane-associated proteins play essential roles in nearly all our body's biochemical processes and are implicated in cancer, autoimmune disorders, and neurodegenerative diseases. Consequently, a selective and universally applicable technique for the degradation of these proteins in disease-relevant conditions could significantly improve human health prospects. Lysosome-targeting chimeras (LYTACs) are bifunctional degraders comprising of an antibody conjugated with a cell-surface receptor ligand that enables cargo lysosome shuttling and degradation. Herein, we demonstrate that conjugation of antibodies with a small ketoboronate-based, lysine-reactive, covalent-reversible uptake tag (KB) enables the internalization of plasma membrane and extracellular proteins, directing them to lysosomal degradation via receptor-mediated endocytosis. Chemoproteomic target deconvolution revealed that reversible modification of lysine residues on the transferrin receptor protein 1 (TFRC) and HLA class I histocompatibility antigen A, B and C (HLA-ABC) enabled efficient uptake and lysosomal targeting through both clathrin-dependent and -independent mechanisms. KB-antibody conjugates (KB-TACs) efficiently degrade the epidermal growth factor receptor (EGFR), vascular endothelial growth factor A (VEGFA) and epidermal growth factor receptor 2 (HER2) in cancer cells. Furthermore, we showed KB-TTZ degrades HER2 in vivo in BT-474 tumor xenografts, with a significant reduction in tumor volumes compared to TTZ and vehicle treatments. Altogether, the KB tag represents a versatile, minimal-size chemical unit to functionalize therapeutic antibodies for targeted protein degradation through dual receptor-mediated endocytosis and lysosomal delivery.",
+    "journal": "J Am Chem Soc",
+    "year": 2025,
+    "doi": "10.1021/jacs.5c16611"
+  },
+  {
+    "item_id": "s5_027",
+    "pmid": "42220438",
+    "title": "Exploring Novel E3 Ligases and Neosubstrates for Molecular Glue Degraders and Therapeutic Applications in Cancer.",
+    "abstract": "Molecular glue degraders (MGDs) are an emerging class of small molecules that promote selective protein degradation by inducing neomorphic interactions between E3 ubiquitin ligases and non-native substrates, referred to as neosubstrates. Clinically validated examples include thalidomide analogs that recruit cereblon (CRBN) to degrade IKAROS family zinc finger 1/3 in multiple myeloma, and arylsulfonamide-based MGDs that promote the degradation of RNA-binding protein 39 in acute myeloid leukemia and solid tumors. These molecules highlight the therapeutic potential of this modality in oncology. These findings underscore the promise of MGDs for eliminating oncogenic proteins previously considered undruggable and overcoming resistance to conventional inhibitors. Despite these successes, the current MGD landscape relies heavily on a limited set of E3 ligases-mainly CRBN which constrains substrate diversity, tissue selectivity, and durability of clinical response. Expanding the therapeutic utility of MGDs requires the systematic identification of novel ligases and their neosubstrates, accompanied by a deeper understanding of the mechanistic basis of ligase-substrate recognition. Recent technological advances, including chemoproteomics, ubiquitin-remnant profiling, degron mapping, clustered regularly interspaced short palindromic repeats-based functional genomics, and artificial intelligence-driven structural modeling, are advancing the discovery of new ligase-substrate pairs and enabling the rational design of degraders. Parallel progress in next-generation CRBN E3 ligase modulators, noncanonical MGDs, and structure-guided engineering further illustrates the expanding therapeutic versatility of this approach. By integrating multidisciplinary discovery strategies with translational oncology, the field is moving toward the development of next-generation MGDs with enhanced specificity, broader substrate scope, and improved resistance profiles. This study aims to elucidate how these innovations expand the degradable proteome and establish MGDs as a cornerstone of precision cancer therapy, thereby redefining the boundaries of drug discovery and providing customizable degraders tailored to diverse cancer contexts.",
+    "journal": "Oncol Res",
+    "year": 2026,
+    "doi": "10.32604/or.2026.073660"
+  },
+  {
+    "item_id": "s5_049",
+    "pmid": "38355805",
+    "title": "Nuclear morphology is shaped by loop-extrusion programs.",
+    "abstract": "It is well established that neutrophils adopt malleable polymorphonuclear shapes to migrate through narrow interstitial tissue spaces1-3. However, how polymorphonuclear structures are assembled remains unknown4. Here we show that in neutrophil progenitors, halting loop extrusion-a motor-powered process that generates DNA loops by pulling in chromatin5-leads to the assembly of polymorphonuclear genomes. Specifically, we found that in mononuclear neutrophil progenitors, acute depletion of the loop-extrusion loading factor nipped-B-like protein (NIPBL) induced the assembly of horseshoe, banded, ringed and hypersegmented nuclear structures and led to a reduction in nuclear volume, mirroring what is observed during the differentiation of neutrophils. Depletion of NIPBL also induced cell-cycle arrest, activated a neutrophil-specific gene program and conditioned a loss of interactions across topologically associating domains to generate a chromatin architecture that resembled that of differentiated neutrophils. Removing NIPBL resulted in\u00a0enrichment for mega-loops and interchromosomal hubs that contain genes associated with neutrophil-specific enhancer repertoires and an inflammatory gene program. On the basis of these observations, we propose that in neutrophil progenitors, loop-extrusion programs produce lineage-specific chromatin architectures that permit the packing of chromosomes into geometrically confined lobular structures. Our data also provide a blueprint for the assembly of polymorphonuclear structures, and point to the possibility of engineering de novo nuclear shapes to facilitate the migration of effector cells in densely populated tumorigenic environments.",
+    "journal": "Nature",
+    "year": 2024,
+    "doi": "10.1038/s41586-024-07086-9"
+  },
+  {
+    "item_id": "s5_004",
+    "pmid": "36649711",
+    "title": "Protein folding stress potentiates NLRP1 and CARD8 inflammasome activation.",
+    "abstract": "NLRP1 and CARD8 are related pattern-recognition receptors (PRRs) that detect intracellular danger signals and form inflammasomes. Both undergo autoproteolysis, generating N-terminal (NT) and C-terminal (CT) fragments. The proteasome-mediated degradation of the NT releases the CT from autoinhibition, but the stimuli that trigger NT degradation have not been fully elucidated. Here, we show that several distinct agents that interfere with protein folding, including aminopeptidase inhibitors, chaperone inhibitors, and inducers of the unfolded protein response, accelerate NT degradation. However, these agents alone do not trigger inflammasome formation because the released CT fragments are physically sequestered by the serine dipeptidase DPP9. We show that DPP9-binding ligands must also be present to disrupt these complexes and allow the CT fragments to oligomerize into inflammasomes. Overall, these results indicate that NLRP1 and CARD8 detect a specific perturbation that induces both protein folding stress and DPP9 ligand accumulation.",
+    "journal": "Cell Rep",
+    "year": 2023,
+    "doi": "10.1016/j.celrep.2022.111965"
+  },
+  {
+    "item_id": "s5_012",
+    "pmid": "42282749",
+    "title": "Tet Trim-Away: A conditional rapid protein degradation system for Tetrahymena thermophila.",
+    "abstract": "Tetrahymena thermophila is a ciliated protist that has played pivotal roles in biological discovery. Functional studies of Tetrahymena proteins have largely relied on gene knockouts. Because protein depletion upon knockout typically spans multiple cell cycles, compensatory mechanisms can confound phenotypic interpretation. To instead enable rapid and acute protein depletion, we modified and adapted the Trim-Away system for use in Tetrahymena (Tet Trim-Away). Trim-Away is based on the E3 ubiquitin ligase, TRIM21, that binds to antibody-bound proteins and targets them for proteasome mediated degradation. Here, Trim-Away was modified with a fusion of the N-terminal RBCC (RING, B-box, coiled-coil) domains of TRIM21 with an \u03b1-mCherry (mCh) nanobody sequence that recognizes endogenously tagged mCh proteins of interest (NbmCh). Expression of the RBCC:NbmCh degron, which is controlled by an inducible promotor, promotes rapid target protein depletion within 30 minutes and can be sustained for weeks. Tet Trim-Away is reversible, functions against targets in multiple cellular compartments, and produces loss-of-function phenotypes in Tetrahymena cells.",
+    "journal": "bioRxiv",
+    "year": 2026,
+    "doi": "10.64898/2026.05.29.728803"
+  },
+  {
+    "item_id": "s5_026",
+    "pmid": "37336886",
+    "title": "WDR5 facilitates recruitment of N-MYC to conserved WDR5 gene targets in neuroblastoma cell lines.",
+    "abstract": "Collectively, the MYC family of oncoprotein transcription factors is overexpressed in more than half of all malignancies. The ability of MYC proteins to access chromatin is fundamental to their role in promoting oncogenic gene expression programs in cancer and this function depends on MYC-cofactor interactions. One such cofactor is the chromatin regulator WDR5, which in models of Burkitt lymphoma facilitates recruitment of the c-MYC protein to chromatin at genes associated with protein synthesis, allowing for tumor progression and maintenance. However, beyond Burkitt lymphoma, it is unknown whether these observations extend to other cancers or MYC family members, and whether WDR5 can be deemed as a \"universal\" MYC recruiter. Here, we focus on N-MYC amplified neuroblastoma to determine the extent of colocalization between N-MYC and WDR5 on chromatin while also demonstrating that like c-MYC, WDR5 can facilitate the recruitment of N-MYC to conserved WDR5-bound genes. We conclude based on this analysis that N-MYC and WDR5 colocalize invariantly across cell lines at predicted sites of facilitated recruitment associated with protein synthesis genes. Surprisingly, we also identify N-MYC-WDR5 cobound genes that are associated with DNA repair and cell cycle processes. Dissection of chromatin binding characteristics for N-MYC and WDR5 at all cobound genes reveals that sites of facilitated recruitment are inherently different than most N-MYC-WDR5 cobound sites. Our data reveals that WDR5 acts as a universal MYC recruiter at a small cohort of previously identified genes and highlights novel biological functions that may be coregulated by N-MYC and WDR5 to sustain the neuroblastoma state.",
+    "journal": "Oncogenesis",
+    "year": 2023,
+    "doi": "10.1038/s41389-023-00477-z"
+  },
+  {
+    "item_id": "s5_036",
+    "pmid": "34647674",
+    "title": "The human GID complex engages two independent modules for substrate recruitment.",
+    "abstract": "The human GID (hGID) complex is a conserved E3 ubiquitin ligase regulating diverse biological processes, including glucose metabolism and cell cycle progression. However, the biochemical function and substrate recognition of the multi-subunit complex remain poorly understood. Using biochemical assays, cross-linking mass spectrometry, and cryo-electron microscopy, we show that hGID engages two distinct modules for substrate recruitment, dependent on either WDR26 or GID4. WDR26 and RanBP9 cooperate to ubiquitinate HBP1 in\u00a0vitro, while GID4 is dispensable for this reaction. In contrast, GID4 functions as an adaptor for the substrate ZMYND19, which surprisingly lacks a Pro/N-end degron. GID4 substrate binding and ligase activity is regulated by ARMC8\u03b1, while the shorter ARMC8\u03b2 isoform assembles into a stable hGID complex that is unable to recruit GID4. Cryo-EM reconstructions of these hGID complexes reveal the localization of WDR26 within a ring-like, tetrameric architecture and suggest that GID4 and WDR26/Gid7 utilize different, non-overlapping binding sites. Together, these data advance our mechanistic understanding of how the hGID complex recruits cognate substrates and provides insights into the regulation of its E3 ligase activity.",
+    "journal": "EMBO Rep",
+    "year": 2021,
+    "doi": "10.15252/embr.202152981"
+  },
+  {
+    "item_id": "s5_046",
+    "pmid": "42050721",
+    "title": "Targeted protein degradation for fetal hemoglobin induction: a new paradigm in \u03b2-hemoglobinopathy therapy.",
+    "abstract": "\u03b2-Hemoglobinopathies, such as \u03b2-thalassemia and sickle cell disease, are a group of genetic blood disorders that are prevalent worldwide. These conditions are characterized by defective adult hemoglobin arising from \u03b2-globin gene mutations, leading to complications such as anemia and organ damage. Treatments (e.g., pharmaceutical \u03b3-globin inducers, blood transfusions, stem cell transplants) and curative gene therapies are available to treat these disorders. However, their use is constrained by effectiveness, tolerability, and/or substantial resource demands. Targeted protein degraders (TPDs) are therapeutic modalities that harness cellular degradation pathways to eliminate disease\u2011relevant proteins, encompassing both small\u2011molecule approaches such as PROTACs and molecular glues, and emerging antibody- and nanobody-based degraders, with the potential to provide durable treatment with scalable manufacturing. Many TPDs for \u03b2-hemoglobinopathies target transcription factors known to repress \u03b3-globin, thereby increasing fetal hemoglobin, a hemoglobin subtype that exhibits compensatory properties. This review examines the various \u03b3-globin-inducing TPDs currently in development, their respective advantages and limitations. We also explore TPDs\u2019 mechanisms of actions and emerging tools that could guide future research and development.",
+    "journal": "Biomark Res",
+    "year": 2026,
+    "doi": "10.1186/s40364-026-00911-5"
+  },
+  {
+    "item_id": "s5_017",
+    "pmid": "38670995",
+    "title": "Mechanism of \u03a8-Pro/C-degron recognition by the CRL2FEM1B ubiquitin ligase.",
+    "abstract": "The E3 ligase-degron interaction determines the specificity of the ubiquitin\u2012proteasome system. We recently discovered that FEM1B, a substrate receptor of Cullin 2-RING ligase (CRL2), recognizes C-degrons containing a C-terminal proline. By solving several cryo-EM structures of CRL2FEM1B bound to different C-degrons, we elucidate the dimeric assembly of the complex. Furthermore, we reveal distinct dimerization states of unmodified and neddylated CRL2FEM1B to uncover the NEDD8-mediated activation mechanism of CRL2FEM1B. Our research also indicates that, FEM1B utilizes a bipartite mechanism to recognize both the C-terminal proline and an upstream aromatic residue within the substrate. These structural findings, complemented by in vitro ubiquitination and in vivo cell-based assays, demonstrate that CRL2FEM1B-mediated polyubiquitination and subsequent protein turnover depend on both FEM1B-degron interactions and the dimerization state of the E3 ligase complex. Overall, this study deepens our molecular understanding of how Cullin-RING E3 ligase substrate selection mediates protein turnover.",
+    "journal": "Nat Commun",
+    "year": 2024,
+    "doi": "10.1038/s41467-024-47890-5"
+  },
+  {
+    "item_id": "s5_048",
+    "pmid": "32513738",
+    "title": "Recognition of nonproline N-terminal residues by the Pro/N-degron pathway.",
+    "abstract": "Eukaryotic N-degron pathways are proteolytic systems whose unifying feature is their ability to recognize proteins containing N-terminal (Nt) degradation signals called N-degrons, and to target these proteins for degradation by the 26S proteasome or autophagy. GID4, a subunit of the GID ubiquitin ligase, is the main recognition component of the proline (Pro)/N-degron pathway. GID4 targets proteins through their Nt-Pro residue or a Pro at position 2, in the presence of specific downstream sequence motifs. Here we show that human GID4 can also recognize hydrophobic Nt-residues other than Pro. One example is the sequence Nt-IGLW, bearing Nt-Ile. Nt-IGLW binds to wild-type human GID4 with a Kd of 16 \u03bcM, whereas the otherwise identical Nt-Pro-bearing sequence PGLW binds to GID4 more tightly, with a Kd of 1.9 \u03bcM. Despite this difference in affinities of GID4 for Nt-IGLW vs. Nt-PGLW, we found that the GID4-mediated Pro/N-degron pathway of the yeast Saccharomyces cerevisiae can target an Nt-IGLW-bearing protein for rapid degradation. We solved crystal structures of human GID4 bound to a peptide bearing Nt-Ile or Nt-Val. We also altered specific residues of human GID4 and measured the affinities of resulting mutant GID4s for Nt-IGLW and Nt-PGLW, thereby determining relative contributions of specific GID4 residues to the GID4-mediated recognition of Nt-Pro vs. Nt-residues other than Pro. These and related results advance the understanding of targeting by the Pro/N-degron pathway and greatly expand the substrate recognition range of the GID ubiquitin ligase in both human and yeast cells.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": 2020,
+    "doi": "10.1073/pnas.2007085117"
+  },
+  {
+    "item_id": "s5_020",
+    "pmid": "32385295",
+    "title": "Flexibility of intrinsically disordered degrons in AUX/IAA proteins reinforces auxin co-receptor assemblies.",
+    "abstract": "Cullin RING-type E3 ubiquitin ligases SCFTIR1/AFB1-5 and their AUX/IAA targets perceive the phytohormone auxin. The F-box protein TIR1 binds a surface-exposed degron in AUX/IAAs promoting their ubiquitylation and rapid auxin-regulated proteasomal degradation. Here, by adopting biochemical, structural proteomics and in vivo approaches we unveil how flexibility in AUX/IAAs and regions in TIR1 affect their conformational ensemble allowing surface accessibility of degrons. We resolve TIR1\u00b7auxin\u00b7IAA7 and TIR1\u00b7auxin\u00b7IAA12 complex topology, and show that flexible intrinsically disordered regions (IDRs) in the degron's vicinity, cooperatively position AUX/IAAs on TIR1. We identify essential residues at the TIR1 N- and C-termini, which provide non-native interaction interfaces with IDRs and the folded PB1 domain of AUX/IAAs. We thereby establish a role for IDRs in modulating auxin receptor assemblies. By securing AUX/IAAs on two opposite surfaces of TIR1, IDR diversity supports locally tailored positioning for targeted ubiquitylation, and might provide conformational flexibility for a multiplicity of functional states.",
+    "journal": "Nat Commun",
+    "year": 2020,
+    "doi": "10.1038/s41467-020-16147-2"
+  },
+  {
+    "item_id": "s5_035",
+    "pmid": "26763545",
+    "title": "Two paths for stabilization of ERG in prostate carcinogenesis: TMPRSS2-ERG fusions and speckle-type pox virus and zinc finger protein mutations.",
+    "abstract": "Speckle-type POZ (pox virus and zinc finger protein) protein (SPOP) is an E3 ubiquitin ligase adaptor protein that specifically promotes the ubiquitination and proteasome degradation of proteins. SPOP mutations are frequent in prostate cancer, and in a previous study, An et al. demonstrated that SPOP induced the degradation of the androgen receptor (AR) suggesting that SPOP is important in maintaining prostate homeostasis. In this current highlighted report, An and colleagues showed that ERG, which has been implicated as an oncoprotein in prostate cancer, contains putative SPOP-binding consensus (SBC) motifs 42ASSSS46 and 423VTSSS427 in the N- and C-terminal of ERG, respectively. The authors went on to demonstrate that SPOP promotes the ubiquitination and degradation of ERG through binding to the degron/SBC motif at the ERG N-terminus. SPOP mutations in the MATH domain prevented recognition and targeting of ERG for ubiquitination and degradation. In addition, N-terminal truncated ERG proteins encoded by the most frequently identified TMPRSS2-ERG rearrangements in prostate cancer (T1-E4 and T1-E5) were resistant to SPOP-mediated degradation, resulting in the stabilization of truncated ERG proteins. Stabilization of ERG protein through either SPOP mutation or TMPRSS2-ERG fusions induced proliferation and invasion in prostate cancer cells. This study along with a recently published similar report provides two previously unrecognized mechanisms for the upregulation of ERG proteins frequently observed in prostate cancers. These findings generate great enthusiasm for the development of targeted therapeutic strategies designed to eliminate ERG protein in prostate cancer cells.",
+    "journal": "Asian J Androl",
+    "year": 2016,
+    "doi": "10.4103/1008-682X.168793"
+  },
+  {
+    "item_id": "s5_028",
+    "pmid": "33523606",
+    "title": "Methods for Rapid Protein Depletion in C. elegans using Auxin-Inducible Degradation.",
+    "abstract": "Numerous methods have been developed in model systems to deplete or inactivate proteins to elucidate their functional roles. In Caenorhabditis elegans, a common method for protein depletion is RNA interference (RNAi), in which mRNA is targeted for degradation. C. elegans is also a powerful genetic organism, amenable to large-scale genetic screens and CRISPR-mediated genome editing. However, these approaches largely lead to constitutive inhibition, which can make it difficult to study proteins essential for development or to dissect dynamic cellular processes. Thus, there have been recent efforts to develop methods to rapidly inactivate or deplete proteins to overcome these barriers. One such method that is proving to be exceptionally powerful is auxin-inducible degradation. In order to apply this approach in C. elegans, a 44-amino acid degron tag is added to the protein of interest, and the Arabidopsis ubiquitin ligase TIR1 is expressed in target tissues. When the plant hormone auxin is added, it mediates an interaction between TIR1 and the degron-tagged protein of interest, which triggers ubiquitination of the protein and its rapid degradation via the proteasome. Here, we have outlined multiple methods for inducing auxin-mediated depletion of target proteins in C. elegans, highlighting the versatility and power of this method. \u00a9 2021 Wiley Periodicals LLC. Basic Protocol 1: Long-term auxin-mediated depletion on plates Support Protocol: Preparation of NGM and NGM-auxin plates Basic Protocol 2: Rapid auxin-mediated depletion via soaking Basic Protocol 3: Acute auxin-mediated depletion in isolated embryos Basic Protocol 4: Assessing auxin-mediated depletion.",
+    "journal": "Curr Protoc",
+    "year": 2021,
+    "doi": "10.1002/cpz1.16"
+  },
+  {
+    "item_id": "s5_008",
+    "pmid": "38450154",
+    "title": "Mapping the substrate landscape of protein phosphatase 2A catalytic subunit PPP2CA.",
+    "abstract": "Protein phosphatase 2A (PP2A) is an essential Ser/Thr phosphatase. The PP2A holoenzyme complex comprises a scaffolding (A), regulatory (B), and catalytic (C)\u00a0subunit, with PPP2CA being the principal catalytic subunit. The full scope of PP2A substrates in cells remains to be defined. To address this, we employed dTAG proteolysis-targeting chimeras to efficiently and selectively degrade dTAG-PPP2CA in homozygous knock-in HEK293 cells. Unbiased global phospho-proteomics identified 2,204 proteins with significantly increased phosphorylation upon dTAG-PPP2CA degradation, implicating them as potential PPP2CA substrates. A vast majority of these are novel. Bioinformatic analyses revealed involvement of the potential PPP2CA substrates in spliceosome function, cell cycle, RNA transport, and ubiquitin-mediated proteolysis. We identify a pSP/pTP motif as a predominant target for PPP2CA and confirm some of our phospho-proteomic data with immunoblotting. We provide an in-depth atlas of potential PPP2CA substrates and establish targeted degradation as a robust tool to unveil phosphatase substrates in cells.",
+    "journal": "iScience",
+    "year": 2024,
+    "doi": "10.1016/j.isci.2024.109302"
+  },
+  {
+    "item_id": "s5_050",
+    "pmid": "37398139",
+    "title": "Toxoplasma gondii encodes an array of TBC-domain containing proteins including an essential regulator that targets Rab2 in the secretory pathway.",
+    "abstract": "Toxoplasma gondii resides in its intracellular niche by employing a series of specialized secretory organelles that play roles in invasion, host-cell manipulation and parasite replication. Rab GTPases are major regulators of the parasite's secretory traffic that function as nucleotide dependent molecular switches to control vesicle trafficking. While many of the Rab proteins have been characterized in T. gondii , precisely how these Rabs are regulated remains poorly understood. To better understand the parasite's secretory traffic, we investigated the entire family of Tre2-Bub2-Cdc16 (TBC)-domain containing proteins, which are known to be involved in vesicle fusion and secretory protein trafficking. We first determined the localization of all 18 TBC-domain containing proteins to discrete regions of the secretory pathway or other vesicles in the parasite. We then use an auxin-inducible degron approach to demonstrate that the protozoan-specific TgTBC9 protein that localizes to the ER is essential for parasite survival. Knockdown of TgTBC9 results in parasite growth arrest and affects the organization of the ER and Golgi apparatus. We show that the conserved dual-finger active site in the TBC-domain of the protein is critical for its GTPase-activating protein (GAP) function and that the P. falciparum orthologue of TgTBC9 can rescue the lethal knockdown. We additionally show by immunoprecipitation and yeast two hybrid analyses that TgTBC9 directly binds Rab2, indicating that this TBC-Rab pair controls ER to Golgi traffic in the parasite. Together, these studies identify the first essential TBC protein described in any protozoan, provide new insight into intracellular vesicle trafficking in T. gondii , and reveal promising targets for the design of novel therapeutics that can specifically target apicomplexan parasites.",
+    "journal": "bioRxiv",
+    "year": 2023,
+    "doi": "10.1101/2023.05.28.542599"
+  },
+  {
+    "item_id": "s5_030",
+    "pmid": "41891920",
+    "title": "Structural Studies of \u03b2TrCP Reveal Plasticity in Binding Modes of Consensus and Nonconsensus Degrons.",
+    "abstract": "The E3 ligase \u03b2TrCP regulates a significant number of important cytosolic proteins by recognizing and binding to a \"DSGXXS\" consensus phosphodegron sequence, resulting in the ubiquitination and degradation of target proteins. While many of the substrates of \u03b2TrCP have strong disease links, there is high-resolution structural data available for just one of these proteins in complex with \u03b2TrCP. Here, we describe the development of a robust crystallographic system for \u03b2TrCP and report high-resolution crystal structures for \u03b2TrCP in complex with degrons from five new targets, encompassing the important cancer proteins, WEE1, claspin, ATF4, PDCD4, and I\u03baB\u03b1. Interestingly, these structures reveal the molecular basis by which \u03b2TrCP can recognize and bind both consensus and nonconsensus degron peptides and reveal an overall general plasticity in degron binding mode. We also provide a biochemical assessment of the binding affinities of these peptides for \u03b2TrCP, adding further insight into the molecular interactions observed in the crystal structures. Finally, computational analyses of the \u03b2TrCP complexes identify opportunities for potential molecular glue approaches.",
+    "journal": "ACS Chem Biol",
+    "year": 2026,
+    "doi": "10.1021/acschembio.5c01007"
+  },
+  {
+    "item_id": "s5_031",
+    "pmid": "40345204",
+    "title": "Leveraging CRISPR activation for rapid assessment of gene editing products in human pluripotent stem cells.",
+    "abstract": "Verification of genome editing in human pluripotent stem cells (hPSCs), particularly at silent loci, is desirable but challenging, as it often requires complex and time-intensive differentiation to induce their expression. Here, we establish a rapid and effective workflow for verifying genome-edited hPSC lines targeting unexpressed genes using CRISPR-mediated transcriptional activation (CRISPRa). We systematically compared the efficiency of various CRISPRa systems and identified the synergistic activation mediator (SAM) system as the most potent for activating silent genes in hPSCs. Furthermore, combining SAM with TET1, a demethylation module, enhanced the activation of methylated genes. By inducing targeted gene activation in undifferentiated hPSCs using CRISPRa, we successfully verified single- and dual-reporter lines, functionally tested degradation tag (dTAG) knockins, and validated silent gene knockouts within 48 h. This approach bypasses the need to induce target gene expression through differentiation, providing a rapid and effective assay for verifying silent gene editing at the hPSC stage.",
+    "journal": "Stem Cell Reports",
+    "year": 2025,
+    "doi": "10.1016/j.stemcr.2025.102499"
+  },
+  {
+    "item_id": "s5_019",
+    "pmid": "38874443",
+    "title": "Dipeptidyl peptidases and E3 ligases of N-degron pathways cooperate to regulate protein stability.",
+    "abstract": "N-degrons are short sequences located at protein N-terminus that mediate the interaction of E3 ligases (E3s) with substrates to promote their proteolysis. It is well established that N-degrons can be exposed following protease cleavage to allow recognition by E3s. However, our knowledge regarding how proteases and E3s cooperate in protein quality control mechanisms remains minimal. Using a systematic approach to monitor the protein stability of an N-terminome library, we found that proline residue at the third N-terminal position (hereafter \"P+3\") promotes instability. Genetic perturbations identified the dipeptidyl peptidases DPP8 and DPP9 and the primary E3s of N-degron pathways, UBR proteins, as regulators of P+3 bearing substrate turnover. Interestingly, P+3 UBR substrates are significantly enriched for secretory proteins. We found that secretory proteins relying on a signal peptide (SP) for their targeting contain a \"built-in\" N-degron within their SP. This degron becomes exposed by DPP8/9 upon translocation failure to the designated compartments, thus enabling clearance of mislocalized proteins by UBRs to maintain proteostasis.",
+    "journal": "J Cell Biol",
+    "year": 2024,
+    "doi": "10.1083/jcb.202311035"
+  },
+  {
+    "item_id": "s5_016",
+    "pmid": "34889072",
+    "title": "Arming Immune Cell Therapeutics with Polymeric Prodrugs.",
+    "abstract": "Engineered immune cells are an exciting therapeutic modality, which survey and attack tumors. Backpacking strategies exploit cell targeting capabilities for delivery of drugs to combat tumors and their immune-suppressive environments. Here, a new platform for arming cell therapeutics through dual receptor and polymeric prodrug engineering is developed. Macrophage and T cell therapeutics are engineered to express a bioorthogonal single chain variable fragment receptor. The receptor binds a fluorescein ligand that directs cell loading with ligand-tagged polymeric prodrugs, termed \"drugamers.\" The fluorescein ligand facilitates stable binding of drugamer to engineered macrophages over 10 days with 80% surface retention. Drugamers also incorporate prodrug monomers of the phosphoinositide-3-kinase inhibitor, PI-103. The extended release of PI-103 from the drugamer sustains antiproliferative activity against a glioblastoma cell line compared to the parent drug. The versatility and modularity of this cell arming system is demonstrated by loading T cells with a second fluorescein-drugamer. This drugamer incorporates a small molecule estrogen analog, CMP8, which stabilizes a degron-tagged transgene to provide temporal regulation of protein activity in engineered T cells. These results demonstrate that this bioorthogonal receptor and drugamer system can be used to arm multiple immune cell classes with both antitumor and transgene-activating small molecule prodrugs.",
+    "journal": "Adv Healthc Mater",
+    "year": 2022,
+    "doi": "10.1002/adhm.202101944"
+  },
+  {
+    "item_id": "s5_003",
+    "pmid": "31744379",
+    "title": "Regulation of reticulophagy by the N-degron pathway.",
+    "abstract": "Cellular homeostasis requires selective autophagic degradation of damaged or defective organelles, including the endoplasmic reticulum (ER). Previous studies have shown that specific ER transmembrane receptors recruit LC3 on autophagic membranes by using LC3-interacting domains. In this study, we showed that the N-degron pathway mediates ubiquitin (Ub)-dependent reticulophagy. During this 2-step process, the ER transmembrane E3 ligase TRIM13 undergoes auto-ubiquitination via lysine 63 (K63) linkage chains and acts as a ligand for the autophagic receptor SQSTM1/p62 (sequestosome 1). In parallel, ER-residing molecular chaperones, such as HSPA5/GRP78/BiP, are relocated to the cytosol and conjugated with the amino acid L-arginine (Arg) at the N-termini by ATE1 (arginyltransferase 1). The resulting N-terminal Arg (Nt-Arg) binds the ZZ domain of SQSTM1, inducing oligomerization of SQSTM1-TRIM13 complexes and facilitating recruitment of LC3 on phagophores to the sites of reticulophagy. We developed small molecule ligands to the SQSTM1 ZZ domain and demonstrate that these chemical mimics of Nt-Arg facilitate reticulophagy and autophagic protein quality control of misfolded aggregates in the ER.",
+    "journal": "Autophagy",
+    "year": 2020,
+    "doi": "10.1080/15548627.2019.1695402"
+  },
+  {
+    "item_id": "s5_034",
+    "pmid": "30723146",
+    "title": "Regulatory cascade involving transcriptional and N-end rule pathways in rice under submergence.",
+    "abstract": "The rice SUB1A-1 gene, which encodes a group VII ethylene response factor (ERFVII), plays a pivotal role in rice survival under flooding stress, as well as other abiotic stresses. In Arabidopsis, five ERFVII factors play roles in regulating hypoxic responses. A characteristic feature of Arabidopsis ERFVIIs is a destabilizing N terminus, which functions as an N-degron that targets them for degradation via the oxygen-dependent N-end rule pathway of proteolysis, but permits their stabilization during hypoxia for hypoxia-responsive signaling. Despite having the canonical N-degron sequence, SUB1A-1 is not under N-end rule regulation, suggesting a distinct hypoxia signaling pathway in rice during submergence. Herein we show that two other rice ERFVIIs gene, ERF66 and ERF67, are directly transcriptionally up-regulated by SUB1A-1 under submergence. In contrast to SUB1A-1, ERF66 and ERF67 are substrates of the N-end rule pathway that are stabilized under hypoxia and may be responsible for triggering a stronger transcriptional response to promote submergence survival. In support of this, overexpression of ERF66 or ERF67 leads to activation of anaerobic survival genes and enhanced submergence tolerance. Furthermore, by using structural and protein-interaction analyses, we show that the C terminus of SUB1A-1 prevents its degradation via the N-end rule and directly interacts with the SUB1A-1 N terminus, which may explain the enhanced stability of SUB1A-1 despite bearing an N-degron sequence. In summary, our results suggest that SUB1A-1, ERF66, and ERF67 form a regulatory cascade involving transcriptional and N-end rule control, which allows rice to distinguish flooding from other SUB1A-1-regulated stresses.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": 2019,
+    "doi": "10.1073/pnas.1818507116"
+  },
+  {
+    "item_id": "s5_023",
+    "pmid": "41398462",
+    "title": "Evolution of promoter-proximal pausing enabled a new layer of transcription control.",
+    "abstract": "Promoter-proximal pausing of RNA polymerase (Pol) II is a key regulatory step during transcription. Despite the central role of pausing in gene regulation, we do not understand the evolutionary processes that led to the emergence of Pol II pausing or its transition to a rate-limiting step actively controlled by transcription factors. Here, we analyzed transcription in species across the tree of life. Unicellular eukaryotes display an accumulation of Pol II near transcription start sites, which we propose transitioned to the longer-lived, focused pause observed in metazoans. This transition coincided with the evolution of new subunits in the negative elongation factor (NELF) and 7SK complexes. Depletion of NELF in mammals shifted the promoter-proximal buildup of Pol II from the pause site into the early gene body and compromised transcriptional activation for a set of heat-shock genes. Our work details the evolutionary history of Pol II pausing and sheds light on how new transcriptional regulatory mechanisms evolve.",
+    "journal": "Nat Struct Mol Biol",
+    "year": 2026,
+    "doi": "10.1038/s41594-025-01718-y"
+  },
+  {
+    "item_id": "s5_037",
+    "pmid": "29358938",
+    "title": "Acute Pharmacologic Degradation of a Stable Antigen Enhances Its Direct Presentation on MHC Class I Molecules.",
+    "abstract": "Bifunctional degraders, also referred to as proteolysis-targeting chimeras (PROTACs), are a recently developed class of small molecules. They were designed to specifically target endogenous proteins for ubiquitin/proteasome-dependent degradation and to thereby interfere with pathological mechanisms of diseases, including cancer. In this study, we hypothesized that this process of acute pharmacologic protein degradation might increase the direct MHC class I presentation of degraded targets. By studying this question, we contribute to an ongoing discussion about the origin of peptides feeding the MHC class I presentation pathway. Two scenarios have been postulated: peptides can either be derived from homeostatic turnover of mature proteins and/or from short-lived defective ribosomal products (DRiPs), but currently, it is still unclear to what ratio and efficiency both pathways contribute to the overall MHC class I presentation. We therefore generated the intrinsically stable model antigen GFP-S8L-F12 that was susceptible to acute pharmacologic degradation via the previously described degradation tag (dTAG) system. Using different murine cell lines, we show here that the bifunctional molecule dTAG-7 induced rapid proteasome-dependent degradation of GFP-S8L-F12 and simultaneously increased its direct presentation on MHC class I molecules. Using the same model in a doxycycline-inducible setting, we could further show that stable, mature antigen was the major source of peptides presented, thereby excluding a dominant role of DRiPs in our system. This study is, to our knowledge, the first to investigate targeted pharmacologic protein degradation in the context of antigen presentation and our data point toward future applications by strategically combining therapies using bifunctional degraders with their stimulating effect on direct MHC class I presentation.",
+    "journal": "Front Immunol",
+    "year": 2017,
+    "doi": "10.3389/fimmu.2017.01920"
+  },
+  {
+    "item_id": "s5_024",
+    "pmid": "32366662",
+    "title": "Five enzymes of the Arg/N-degron pathway form a targeting complex: The concept of superchanneling.",
+    "abstract": "The Arg/N-degron pathway targets proteins for degradation by recognizing their N-terminal (Nt) residues. If a substrate bears, for example, Nt-Asn, its targeting involves deamidation of Nt-Asn, arginylation of resulting Nt-Asp, binding of resulting (conjugated) Nt-Arg to the UBR1-RAD6 E3-E2 ubiquitin ligase, ligase-mediated synthesis of a substrate-linked polyubiquitin chain, its capture by the proteasome, and substrate's degradation. We discovered that the human Nt-Asn-specific Nt-amidase NTAN1, Nt-Gln-specific Nt-amidase NTAQ1, arginyltransferase ATE1, and the ubiquitin ligase UBR1-UBE2A/B (or UBR2-UBE2A/B) form a complex in which NTAN1 Nt-amidase binds to NTAQ1, ATE1, and UBR1/UBR2. In addition, NTAQ1 Nt-amidase and ATE1 arginyltransferase also bind to UBR1/UBR2. In the yeast Saccharomyces cerevisiae, the Nt-amidase, arginyltransferase, and the double-E3 ubiquitin ligase UBR1-RAD6/UFD4-UBC4/5 are shown to form an analogous targeting complex. These complexes may enable substrate channeling, in which a substrate bearing, for example, Nt-Asn, would be captured by a complex-bound Nt-amidase, followed by sequential Nt modifications of the substrate and its polyubiquitylation at an internal Lys residue without substrate's dissociation into the bulk solution. At least in yeast, the UBR1/UFD4 ubiquitin ligase interacts with the 26S proteasome, suggesting an even larger Arg/N-degron-targeting complex that contains the proteasome as well. In addition, specific features of protein-sized Arg/N-degron substrates, including their partly sequential and partly nonsequential enzymatic modifications, led us to a verifiable concept termed \"superchanneling.\" In superchanneling, the synthesis of a substrate-linked poly-Ub chain can occur not only after a substrate's sequential Nt modifications, but also before them, through a skipping of either some or all of these modifications within a targeting complex.",
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": 2020,
+    "doi": "10.1073/pnas.2003043117"
+  },
+  {
+    "item_id": "s5_045",
+    "pmid": "41575854",
+    "title": "RNA Pol I shapes meiotic chromatin, germline H3K4me3 dynamics, and oogenesis independent of ribosome assembly.",
+    "abstract": "Oogenesis requires extensive chromatin remodeling that primes promoters for embryonic transcription. We reveal a non-canonical role for RNA polymerase I (Pol I) in driving these transitions during Caenorhabditis elegans oogenesis. Using the auxin-inducible degron to deplete Pol I catalytic subunits or ribosome assembly factors, we separated nucleolar disruption from reduced ribosome assembly. Loss of ribosome assembly minimally affected oocyte number or morphology, whereas Pol I depletion led to broadly altered autosomal chromatin accessibility, reduced the distal-proximal H3K4me3 gradient, impaired synapsis, and increased ATM/ATR phosphorylation, yielding fewer but larger oocytes. Despite increased promoter accessibility, oogenesis genes changed little at steady-state mRNA, consistent with pre-fertilization transcription repression. Instead, Pol I depletion prematurely remodeled oogenic chromatin by misdirecting H3K4me3 to promoters normally primed for zygotic genome activation. These findings reveal an epigenetic gating function for nucleolar integrity: Pol I preserves chromatin organization and maintains proper histone-modification dynamics during oocyte maturation, independent of ribosome assembly.",
+    "journal": "Cell Rep",
+    "year": 2026,
+    "doi": "10.1016/j.celrep.2025.116866"
+  },
+  {
+    "item_id": "s5_044",
+    "pmid": "32948804",
+    "title": "An IMiD-induced SALL4 degron system for selective degradation of target proteins.",
+    "abstract": "Regulating the amount of proteins in living cells is a powerful approach for understanding the functions of the proteins. Immunomodulatory drugs (IMiDs) induce the degradation of neosubstrates by interacting with celebron (CRBN) in the cullin E3 ubiquitin ligase complex (CRL4CRBN). Here, we developed the IMiD-dependent Sal-like protein 4 (SALL4) degron (S4D) system for chemical protein knockdown. In transient assays, an N- or C-terminal S4D tag induced the degradation of proteins localized to various subcellular compartments, including the plasma membrane. The activity of luciferase-S4D was reduced by 90% within 3\u2009h of IMiD treatment. IMiD treatment reduced the expression of endogenous S4D-fused RelA and I\u03baB\u03b1 in knock-in (KI) experiments. Interestingly, the I\u03baB\u03b1 knockdown suggested that there may be another, unknown mechanism for RelA translocation to the nucleus. Furthermore, 5-hydroxythalidomide as a thalidomide metabolite specifically degradated S4D-tagged protein. These results indicate that the S4D system is a useful tool for cellular biology.",
+    "journal": "Commun Biol",
+    "year": 2020,
+    "doi": "10.1038/s42003-020-01240-5"
+  },
+  {
+    "item_id": "s5_033",
+    "pmid": "34345664",
+    "title": "Unifying Catalysis Framework to Dissect Proteasomal Degradation Paradigms.",
+    "abstract": "Diverging from traditional target inhibition, proteasomal protein degradation approaches have emerged as novel therapeutic modalities that embody distinct pharmacological profiles and can access previously undrugged targets. Small molecule degraders have the potential to catalytically destroy target proteins at substoichiometric concentrations, thus lowering administered doses and extending pharmacological effects. With this mechanistic premise, research efforts have advanced the development of small molecule degraders that benefit from stable and increased affinity ternary complexes. However, a holistic framework that evaluates different degradation modes from a catalytic perspective, including focusing on kinetically favored degradation mechanisms, is lacking. In this Outlook, we introduce the concept of an induced cooperativity spectrum as a unifying framework to mechanistically understand catalytic degradation profiles. This framework is bolstered by key examples of published molecular degraders extending from molecular glues to bivalent degraders. Critically, we discuss remaining challenges and future opportunities in drug discovery to rationally design and phenotypically screen for efficient degraders.",
+    "journal": "ACS Cent Sci",
+    "year": 2021,
+    "doi": "10.1021/acscentsci.1c00389"
+  },
+  {
+    "item_id": "s5_010",
+    "pmid": "41238959",
+    "title": "Uniform dynamics of cohesin-mediated loop extrusion in living human cells.",
+    "abstract": "Most animal genomes are partitioned into topologically associating domains (TADs), created by cohesin-mediated loop extrusion and defined by convergently oriented CCCTC-binding factor (CTCF) sites. The dynamics of loop extrusion and its regulation remain poorly characterized in vivo. Here we tracked the motion of TAD anchors in living human cells to visualize and quantify cohesin-dependent loop extrusion across multiple endogenous genomic regions. We show that TADs are dynamic structures whose anchors are brought in proximity about once per hour and for 6-19\u2009min (~16% of the time). Moreover, TADs are continuously extruded by multiple cohesin complexes. Remarkably, despite strong differences in Hi-C patterns across chromatin regions, their dynamics is consistent with the same density, residence time and speed of cohesin. Our results suggest that TAD dynamics is primarily governed by the location and affinity of CTCF sites, enabling genome-wide predictive models of cohesin-dependent chromatin interactions.",
+    "journal": "Nat Genet",
+    "year": 2025,
+    "doi": "10.1038/s41588-025-02406-9"
+  },
+  {
+    "item_id": "s5_006",
+    "pmid": "41632506",
+    "title": "The chromatin remodeller CHD4 regulates transcription factor binding to both prevent activation of silent enhancers and maintain active regulatory elements.",
+    "abstract": "Chromatin organisation and transcriptional regulation are tightly coordinated processes that are essential for maintaining cellular identity and function. ATP-dependent chromatin remodelling proteins play critical roles in control of genome structure and in regulating transcription across eukaryotes. Their essential nature, however, has made it difficult to define exactly how these functions are mediated. The chromatin remodeller CHD4 has been shown to be capable of sliding nucleosomes in vitro, and to regulate chromatin accessibility and gene expression in vivo. Using an inducible depletion system, here we identify a second mechanism of action for CHD4 in actively restricting the residence time of transcription factors (TFs) on chromatin. Together, these activities result in distinct, context-dependent outcomes: at highly accessible regulatory elements, CHD4 limits TF binding to maintain regulatory function, while at low-accessibility euchromatic regions, it prevents TF engagement and sustains chromatin compaction, thereby silencing cryptic enhancers. Collectively, these mechanisms enable CHD4 to reduce transcriptional noise while preserving the responsiveness of active regulatory networks.",
+    "journal": "Elife",
+    "year": 2026,
+    "doi": "10.7554/eLife.109280"
+  },
+  {
+    "item_id": "s5_013",
+    "pmid": "40369156",
+    "title": "Targeting transcription factors through an IMiD independent zinc finger domain.",
+    "abstract": "Immunomodulatory imide drugs (IMiDs) degrade specific C2H2 zinc finger degrons in transcription factors, making them effective against certain cancers. SALL4, a cancer driver, contains seven C2H2 zinc fingers in three clusters, including an IMiD degron in zinc finger cluster one (ZFC1). Surprisingly, IMiDs do not inhibit the growth of SALL4-expressing cancer cells. To overcome this limit, we focused on a non-IMiD domain, SALL4 zinc finger cluster four (ZFC4). By combining ZFC4-DNA crystal structure and an in silico docking algorithm, in conjunction with cell viability assays, we screened several chemical libraries against a potentially druggable binding pocket, leading to the discovery of SH6, a compound that selectively targets SALL4-expressing cancer cells. Mechanistic studies revealed that SH6 degrades SALL4 protein through the CUL4A/CRBN pathway, while deletion of ZFC4 abolished this activity. Moreover, SH6 treatment led to a significant 87% tumor growth inhibition of SALL4+ patient-derived xenografts and demonstrated good bioavailability in pharmacokinetic studies. In summary, these studies represent a new approach for IMiD independent drug discovery targeting C2H2 transcription factors such as SALL4 in cancer.",
+    "journal": "EMBO Mol Med",
+    "year": 2025,
+    "doi": "10.1038/s44321-025-00241-3"
+  },
+  {
+    "item_id": "s5_038",
+    "pmid": "35069663",
+    "title": "A Yeast-Based Functional Assay to Study Plant N-Degron - N-Recognin Interactions.",
+    "abstract": "The N-degron pathway is a branch of the ubiquitin-proteasome system where amino-terminal residues serve as degradation signals. In a synthetic biology approach, we expressed ubiquitin ligase PRT6 and ubiquitin conjugating enzyme 2 (AtUBC2) from Arabidopsis thaliana in a Saccharomyces cerevisiae strain with mutation in its endogenous N-degron pathway. The two enzymes re-constitute part of the plant N-degron pathway and were probed by monitoring the stability of co-expressed GFP-linked plant proteins starting with Arginine N-degrons. The novel assay allows for straightforward analysis, whereas in vitro interaction assays often do not allow detection of the weak binding of N-degron recognizing ubiquitin ligases to their substrates, and in planta testing is usually complex and time-consuming.",
+    "journal": "Front Plant Sci",
+    "year": 2021,
+    "doi": "10.3389/fpls.2021.806129"
+  },
+  {
+    "item_id": "s5_032",
+    "pmid": "38293053",
+    "title": "Variant-specific pathophysiological mechanisms of AFF3 differently influence transcriptome profiles.",
+    "abstract": "BACKGROUND: We previously described the KINSSHIP syndrome, an autosomal dominant disorder associated with intellectual disability (ID), mesomelic dysplasia and horseshoe kidney,caused by de novo variants in the degron of AFF3. Mouse knock-ins and overexpression in zebrafish provided evidence for a dominant-negative (DN) mode-of-action, wherein an increased level of AFF3 resulted in pathological effects.\n\nMETHODS: Evolutionary constraints suggest that other mode-of-inheritance could be at play. We challenged this hypothesis by screening ID cohorts for individuals with predicted-to-be deleterious variants in AFF3. We used both animal and cellular models to assess the deleteriousness of the identified variants.\n\nRESULTS: We identified an individual with a KINSSHIP-like phenotype carrying a de novo partial duplication of AFF3 further strengthening the hypothesis that an increased level of AFF3 is pathological. We also detected seventeen individuals displaying a milder syndrome with either heterozygous LoF or biallelic missense variants in AFF3. Consistent with semi-dominance, we discovered three patients with homozygous LoF and one compound heterozygote for a LoF and a missense variant, who presented more severe phenotypes than their heterozygous parents. Matching zebrafish knockdowns exhibit neurological defects that could be rescued by expressing human AFF3 mRNA, confirming their association with the ablation of aff3. Conversely, some of the human AFF3 mRNAs carrying missense variants identified in affected individuals did not complement. Overexpression of mutated AFF3 mRNAs in zebrafish embryos produced a significant increase of abnormal larvae compared to wild-type overexpression further demonstrating deleteriousness. To further assess the effect of AFF3 variation, we profiled the transcriptome of fibroblasts from affected individuals and engineered isogenic cells harboring +/+, DN/DN, LoF/+, LoF/LoF or DN/LoF AFF3 genotypes. The expression of more than a third of the AFF3 bound loci is modified in either the DN/DN or the LoF/LoF lines. While the same pathways are affected, only about one-third of the differentially expressed genes are common to these homozygote datasets, indicating that AFF3 LoF and DN variants largely modulate transcriptomes differently, e.g. the DNA repair pathway displayed opposite modulation.\n\nCONCLUSIONS: Our results and the high pleiotropy shown by variation at this locus suggest that minute changes in AFF3 function are deleterious.",
+    "journal": "medRxiv",
+    "year": 2024,
+    "doi": "10.1101/2024.01.14.24301100"
+  },
+  {
+    "item_id": "s5_014",
+    "pmid": "36638798",
+    "title": "Anthropogenic noise impairs cooperation in bottlenose dolphins.",
+    "abstract": "Understanding the impact of human disturbance on wildlife populations is of societal importance,1 with anthropogenic noise known to impact a range of taxa, including mammals,2 birds,3 fish,4 and invertebrates.5 While animals are known to use acoustic and other behavioral mechanisms to compensate for increasing noise at the individual level, our understanding of how noise impacts social animals working together remains limited. Here, we investigated the effect of noise on coordination between two bottlenose dolphins performing a cooperative task. We previously demonstrated that the dolphin dyad can use whistles to coordinate their behavior, working together with extreme precision.6 By equipping each dolphin with a sound-and-movement recording tag (DTAG-37) and exposing them to increasing levels of anthropogenic noise, we\u00a0show that both dolphins nearly doubled their whistle durations and increased whistle amplitude in response to increasing noise. While these acoustic compensatory mechanisms are the same as those frequently used by wild cetaceans,8,9,10,11,12,13 they were insufficient to overcome the effect of noise on behavioral coordination. Indeed, cooperative task success decreased in the presence of noise, dropping from 85% during ambient noise control trials to 62.5% during the highest noise exposure. This is the first study to demonstrate in any non-human species that noise impairs communication between conspecifics performing a cooperative task. Cooperation facilitates vital functions across many taxa and our findings highlight the need to account for the impact of disturbance on functionally important group tasks in wild animal populations.",
+    "journal": "Curr Biol",
+    "year": 2023,
+    "doi": "10.1016/j.cub.2022.12.063"
+  },
+  {
+    "item_id": "s5_001",
+    "pmid": "41271216",
+    "title": "Recent advances in the mechanism, transduction and function of oxygen sensing in plants.",
+    "abstract": "Response to reduced ambient oxygen is a key component of plant adaptation in natural and farmed environments and is regulated by oxygen dependent proteolysis of transducer proteins through the PCO N-degron pathway. Following the discovery of the core biochemistry of sensing, components and downstream pathways associated with oxygen-sensing have been uncovered that link diverse stages and mechanisms of growth to the requirement for oxygen sensing. Recent developments in understanding the sensing and transduction of the low oxygen signal have highlighted the importance of hypoxia-regulated processes in root development and environmental response and have revealed a key role for cyclic hypoxia in leaf development. Although the pathway is highly conserved in eukaryotes, and important transducer proteins evolved early in land plants, multiple components are under active natural selection related to ambient oxygen levels associated with altitude or humidity. Here we provide an update focussed on recent advances in methodology and mechanistic understanding that highlight the importance of oxygen sensing in plant biology.",
+    "journal": "J Exp Bot",
+    "year": 2025,
+    "doi": "10.1093/jxb/eraf515"
+  },
+  {
+    "item_id": "s5_018",
+    "pmid": "42647607",
+    "title": "RIBOTAC-mediated degradation of hsa-microRNA-301a-3p suppresses TNBC bone metastasis.",
+    "abstract": "Triple-negative breast cancer (TNBC) is an aggressive subtype with a high propensity for bone metastasis and limited treatment options. Although many proteins drive metastasis, most remain inaccessible to conventional small-molecule drugs due to lack of suitable binding sites, prompting interest in upstream RNA regulators. Using integrative bioinformatics and machine learning, we identified hsa-microRNA-301a-3p as a central regulator of TNBC bone metastasis. However, current nucleic acid-based therapies are limited by instability and inefficient delivery. To overcome these challenges, we designed a ribonuclease-targeting chimera (RIBOTAC) that recruits endogenous RNase L to degrade the primary transcript pri-microRNA-301a. The resulting RIBOTAC efficiently reduced hsa-microRNA-301a-3p levels, restored NEDD4L expression, and promoted degradation of the oncogenic protein YAP, thereby suppressing TNBC bone metastasis. These findings identify hsa-microRNA-301a-3p as a key driver and demonstrate RNA-targeted degradation as a therapeutic strategy in TNBC bone metastasis.",
+    "journal": "Sci Adv",
+    "year": 2026,
+    "doi": "10.1126/sciadv.aeh7999"
+  },
+  {
+    "item_id": "s5_039",
+    "pmid": "35316156",
+    "title": "Chemical modulation of SQSTM1/p62-mediated xenophagy that targets a broad range of pathogenic bacteria.",
+    "abstract": "The N-degron pathway is a proteolytic system in which the N-terminal degrons (N-degrons) of proteins, such as arginine (Nt-Arg), induce the degradation of proteins and subcellular organelles via the ubiquitin-proteasome system (UPS) or macroautophagy/autophagy-lysosome system (hereafter autophagy). Here, we developed the chemical mimics of the N-degron Nt-Arg as a pharmaceutical means to induce targeted degradation of intracellular bacteria via autophagy, such as Salmonella enterica serovar Typhimurium (S. Typhimurium), Escherichia coli, and Streptococcus pyogenes as well as Mycobacterium tuberculosis (Mtb). Upon binding the ZZ domain of the autophagic cargo receptor SQSTM1/p62 (sequestosome 1), these chemicals induced the biogenesis and recruitment of autophagic membranes to intracellular bacteria via SQSTM1, leading to lysosomal degradation. The antimicrobial efficacy was independent of rapamycin-modulated core autophagic pathways and synergistic with the reduced production of inflammatory cytokines. In mice, these drugs exhibited antimicrobial efficacy for S. Typhimurium, Bacillus Calmette-Gu\u00e9rin (BCG), and Mtb as well as multidrug-resistant Mtb and inhibited the production of inflammatory cytokines. This dual mode of action in xenophagy and inflammation significantly protected mice from inflammatory lesions in the lungs and other tissues caused by all the tested bacterial strains. Our results suggest that the N-degron pathway provides a therapeutic target in host-directed therapeutics for a broad range of drug-resistant intracellular pathogens.Abbreviations: ATG: autophagy-related gene; BCG: Bacillus Calmette-Gu\u00e9rin; BMDMs: bone marrow-derived macrophages; CALCOCO2/NDP52: calcium binding and coiled-coil domain 2; CFUs: colony-forming units; CXCL: C-X-C motif chemokine ligand; EGFP: enhanced green fluorescent protein; IL1B/IL-1\u03b2: interleukin 1 beta; IL6: interleukin 6; LIR: MAP1LC3/LC3-interacting region; MAP1LC3/LC3: microtubule associated protein 1 light chain 3; Mtb: Mycobacterium tuberculosis; MTOR: mechanistic target of rapamycin kinase; NBR1: NBR1 autophagy cargo receptor; OPTN: optineurin; PB1: Phox and Bem1; SQSTM1/p62: sequestosome 1; S. Typhimurium: Salmonella enterica serovar Typhimurium; TAX1BP1: Tax1 binding protein 1; TNF: tumor necrosis factor; UBA: ubiquitin-associated.",
+    "journal": "Autophagy",
+    "year": 2022,
+    "doi": "10.1080/15548627.2022.2054240"
+  },
+  {
+    "item_id": "s5_005",
+    "pmid": "38579670",
+    "title": "Clustered de novo start-loss variants in GLUL result in a developmental and epileptic encephalopathy via stabilization of glutamine synthetase.",
+    "abstract": "Glutamine synthetase (GS), encoded by GLUL, catalyzes the conversion of glutamate to glutamine. GS is pivotal for the generation of the neurotransmitters glutamate and gamma-aminobutyric acid and is the primary mechanism of ammonia detoxification in the brain. GS levels are regulated post-translationally by an N-terminal degron that enables the ubiquitin-mediated degradation of GS in a glutamine-induced manner. GS deficiency in humans is known to lead to neurological defects and death in infancy, yet how dysregulation of the degron-mediated control of GS levels might affect neurodevelopment is unknown. We ascertained nine individuals with severe developmental delay, seizures, and white matter abnormalities but normal plasma and cerebrospinal fluid biochemistry with de novo variants in GLUL. Seven out of nine were start-loss variants and two out of nine disrupted 5' UTR splicing resulting in splice exclusion of the initiation codon. Using transfection-based expression systems and mass spectrometry, these variants were shown to lead to translation initiation of GS from methionine 18, downstream of the N-terminal degron motif, resulting in a protein that is stable and enzymatically competent but insensitive to negative feedback by glutamine. Analysis of human single-cell transcriptomes demonstrated that GLUL is widely expressed in neuro- and glial-progenitor cells and mature astrocytes but not in post-mitotic neurons. One individual with a start-loss GLUL variant demonstrated periventricular nodular heterotopia, a neuronal migration disorder, yet overexpression of stabilized GS in mice using in utero electroporation demonstrated no migratory deficits. These findings underline the importance of tight regulation of glutamine metabolism during neurodevelopment in humans.",
+    "journal": "Am J Hum Genet",
+    "year": 2024,
+    "doi": "10.1016/j.ajhg.2024.03.005"
+  },
+  {
+    "item_id": "s5_022",
+    "pmid": "37890156",
+    "title": "Acute myeloid leukemias with UBTF tandem duplications are sensitive to menin inhibitors.",
+    "abstract": "UBTF tandem duplications (UBTF-TDs) have recently emerged as a recurrent alteration in pediatric and adult acute myeloid leukemia (AML). UBTF-TD leukemias are characterized by a poor response to conventional chemotherapy and a transcriptional signature that mirrors NUP98-rearranged and NPM1-mutant AMLs, including HOX-gene dysregulation. However, the mechanism by which UBTF-TD drives leukemogenesis remains unknown. In this study, we investigated the genomic occupancy of UBTF-TD in transformed cord blood CD34+ cells and patient-derived xenograft models. We found that UBTF-TD protein maintained genomic occupancy at ribosomal DNA loci while also occupying genomic targets commonly dysregulated in UBTF-TD myeloid malignancies, such as the HOXA/HOXB gene clusters and MEIS1. These data suggest that UBTF-TD is a gain-of-function alteration that results in mislocalization to genomic loci dysregulated in UBTF-TD leukemias. UBTF-TD also co-occupies key genomic loci with KMT2A and menin, which are known to be key partners involved in HOX-dysregulated leukemias. Using a protein degradation system, we showed that stemness, proliferation, and transcriptional signatures are dependent on sustained UBTF-TD localization to chromatin. Finally, we\u00a0demonstrate that primary cells from UBTF-TD leukemias are sensitive to the menin inhibitor SNDX-5613, resulting in markedly reduced in\u00a0vitro and in\u00a0vivo tumor growth, myeloid differentiation, and abrogation of the UBTF-TD leukemic expression signature. These findings provide a viable therapeutic strategy for patients with this high-risk AML subtype.",
+    "journal": "Blood",
+    "year": 2024,
+    "doi": "10.1182/blood.2023021359"
+  },
+  {
+    "item_id": "s5_007",
+    "pmid": "38987546",
+    "title": "Lipid-mediated intracellular delivery of recombinant bioPROTACs for the rapid degradation of undruggable proteins.",
+    "abstract": "Recently, targeted degradation has emerged as a powerful therapeutic modality. Relying on \"event-driven\" pharmacology, proteolysis targeting chimeras (PROTACs) can degrade targets and are superior to conventional inhibitors against undruggable proteins. Unfortunately, PROTAC discovery is limited by warhead scarcity and laborious optimization campaigns. To address these shortcomings, analogous protein-based heterobifunctional degraders, known as bioPROTACs, have been developed. Compared to small-molecule PROTACs, bioPROTACs have higher success rates and are subject to fewer design constraints. However, the membrane impermeability of proteins severely restricts bioPROTAC deployment as a generalized therapeutic modality. Here, we present an engineered bioPROTAC template able to complex with cationic and ionizable lipids via electrostatic interactions for cytosolic delivery. When delivered by biocompatible lipid nanoparticles, these modified bioPROTACs can rapidly degrade intracellular proteins, exhibiting near-complete elimination (up to 95% clearance) of targets within hours of treatment. Our bioPROTAC format can degrade proteins localized to various subcellular compartments including the mitochondria, nucleus, cytosol, and membrane. Moreover, substrate specificity can be easily reprogrammed, allowing modular design and targeting of clinically-relevant proteins such as Ras, Jnk, and Erk. In summary, this work introduces an inexpensive, flexible, and scalable platform for efficient intracellular degradation of proteins that may elude chemical inhibition.",
+    "journal": "Nat Commun",
+    "year": 2024,
+    "doi": "10.1038/s41467-024-50235-x"
+  }
+]

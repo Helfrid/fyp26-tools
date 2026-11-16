@@ -15,3 +15,14 @@ wheels/
 .pytest_cache/
 __pycache__/
 .cache/
+
+# Model output: regenerate it with `abstract-scanner scan`, don't version it.
+# The inputs (input_data/) and the reference annotations (abstracts_annotated/)
+# ARE committed -- they are what a result is compared against.
+results/
+*.jsonl
+.cache/
+
+# Scan manifests belong with the results they describe, not in git. The
+# corpus provenance manifest in input_data/ is NOT output and IS committed.
+results/*.manifest.json

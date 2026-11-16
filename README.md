@@ -31,6 +31,18 @@ earlier work.
 Stage 6 is the gate: the phosphatase scan in stage 7 is only worth running
 once accuracy against hand-labelled ground truth is known.
 
+## Data in this repository
+
+| Path | What |
+|---|---|
+| `input_data/` | The 250 abstracts assigned to students S1-S5 in phase 1 |
+| `abstracts_annotated/` | The students' own classifications — the reference the model is scored against |
+
+Abstract text and bibliographic metadata are facts about the literature, not
+protected expression, and are redistributed here so the evaluation is
+reproducible. Model output is **not** committed: regenerate it with
+`abstract-scanner scan`.
+
 ## Setup
 
 ```bash

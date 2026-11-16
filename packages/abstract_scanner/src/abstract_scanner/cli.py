@@ -20,12 +20,12 @@ from pathlib import Path
 from typing import Annotated
 
 import typer
-from loguru import logger
 
 from abstract_scanner.corpus import CorpusError, load_records
 from abstract_scanner.guide import guide_text
 from abstract_scanner.questions import QuestionSetError, load_question_set
 from abstract_scanner.scan import scan as run_scan
+from common_utils.logging_setup import setup_logging
 from jev_client import (
     DEFAULT_MODEL,
     Budget,
@@ -168,10 +168,21 @@ def scan(
         typer.echo(f"skipped  : {manifest.n_skipped_existing} (already done)")
     if manifest.n_failed:
         typer.secho(f"failed   : {manifest.n_failed}", fg=typer.colors.YELLOW)
+        for failure in manifest.failures:
+            typer.secho(f"  {failure[:160]}", fg=typer.colors.YELLOW, err=True)
     typer.echo(f"tokens   : {manifest.input_tokens:,}")
     typer.echo(f"spent    : ${manifest.spent_usd:.4f} of ${budget:.2f}")
     typer.echo(f"results  : {out}")
     typer.echo(f"manifest : {manifest_path}")
+
+    if manifest.n_scanned == 0 and manifest.n_failed:
+        typer.secho(
+            "\n✗ every record failed — nothing was scanned.\n"
+            f"  First error: {manifest.failures[0]}",
+            fg=typer.colors.RED,
+            err=True,
+        )
+        raise typer.Exit(1)
 
     if manifest.stopped_early:
         typer.secho(
@@ -183,8 +194,18 @@ def scan(
     typer.secho("✓ scan complete", fg=typer.colors.GREEN)
 
 
+# Agent-written: Claude Opus 5.5 (Claude Code), 2026-11-15.
+# Checked by student: <how did you check it?>
 def main() -> None:
-    logger.remove()
+    """Entry point for the ``abstract-scanner`` command.
+
+    Loads ``.env`` (so ``TYPESAFE_API_KEY`` is found without exporting it in
+    the shell) and configures logging, then hands over to Typer. This must be
+    the console-script target rather than ``app`` itself: pointing the script
+    at ``app`` skips this function, and with it the ``.env`` loading.
+    ``.env`` is resolved from the current directory, so run from the repo root.
+    """
+    setup_logging()
     app()
 
 

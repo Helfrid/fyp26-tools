@@ -1,0 +1,497 @@
+[
+  {
+    "item_id": "s3_025",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:11:21.267Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_033",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:12:06.148Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_005",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:13:55.616Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_047",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:18:20.148Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "endogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_045",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:19:16.701Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_030",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:20:19.599Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_011",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:21:52.785Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_039",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:23:47.572Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "other",
+    "locus_strategy": "exogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_044",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:25:09.422Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_014",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:26:05.479Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_015",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:29:15.644Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_009",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:30:32.445Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "dTag",
+    "locus_strategy": "endogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_002",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:34:39.667Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "exogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_024",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:35:32.644Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_043",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:36:06.557Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_010",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:36:41.294Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_049",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:42:36.503Z",
+    "is_tagging_paper": "unsure",
+    "tag_type": "unclear",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_018",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:43:20.256Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_029",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:43:47.864Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_023",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:44:32.609Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "endogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_019",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:44:50.154Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_001",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:45:56.331Z",
+    "is_tagging_paper": "unsure",
+    "tag_type": "unclear",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_046",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:46:17.004Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_017",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:46:32.667Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_048",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:47:35.982Z",
+    "is_tagging_paper": "unsure",
+    "tag_type": "unclear",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_042",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:47:58.782Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_028",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:50:05.738Z",
+    "is_tagging_paper": "unsure",
+    "tag_type": "unclear",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_003",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:51:01.002Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_007",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:51:50.091Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_037",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:52:03.763Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_036",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:53:35.279Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "other",
+    "locus_strategy": "exogenous",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_006",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:53:59.870Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_022",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:54:13.975Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_004",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:55:20.312Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_012",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:56:38.698Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_026",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:57:48.660Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "AID",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_032",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:58:35.413Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_031",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:58:52.112Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_038",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T16:59:51.432Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_013",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:00:23.200Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_034",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:00:56.280Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_020",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:01:58.227Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_027",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:02:27.675Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_016",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:02:44.947Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_040",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:03:14.852Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_035",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:04:18.606Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_041",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:05:17.847Z",
+    "is_tagging_paper": "yes",
+    "tag_type": "other",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  },
+  {
+    "item_id": "s3_008",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:06:10.504Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_021",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:06:24.088Z",
+    "is_tagging_paper": "no"
+  },
+  {
+    "item_id": "s3_050",
+    "annotator": "S3",
+    "annotator_role": "student",
+    "stage": "abstract",
+    "schema_version": 3,
+    "annotated_at": "2026-10-28T17:08:33.404Z",
+    "is_tagging_paper": "unsure",
+    "tag_type": "unclear",
+    "locus_strategy": "unclear",
+    "terminus": "unclear"
+  }
+]

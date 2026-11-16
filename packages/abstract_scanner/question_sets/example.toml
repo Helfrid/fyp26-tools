@@ -27,6 +27,11 @@ options = ["direct_experimental", "correlative", "computational", "none", "manua
 [questions.relevance]
 type = "score"
 instructions = """How relevant is this paper to a project on the cell-cycle \
-role of this phosphatase? 1 = irrelevant, 5 = directly on topic."""
-min = 1
-max = 5
+role of this phosphatase?"""
+# Ordered lowest first; position sets the score, starting at 0.
+levels = [
+    "Irrelevant to this phosphatase",
+    "Mentions it only in passing",
+    "Studies it, but not its cell-cycle role",
+    "Directly about its cell-cycle role",
+]

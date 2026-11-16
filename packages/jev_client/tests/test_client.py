@@ -52,9 +52,66 @@ def test_choice_requires_two_options():
         choice("pick one", ["only"])
 
 
-def test_score_requires_a_range():
+def test_score_requires_at_least_two_levels():
     with pytest.raises(ValueError):
-        score("rate it", minimum=5, maximum=5)
+        score("rate it", ["only one level"])
+
+
+def test_score_rejects_more_than_ten_levels():
+    with pytest.raises(ValueError):
+        score("rate it", [f"level {i}" for i in range(11)])
+
+
+def test_score_sends_criteria_as_an_ordered_list():
+    """Position sets the score, starting at 0 -- order is the data."""
+    built = score("how urgent", ["Low", "Medium", "High"])
+    assert built == {
+        "type": "score",
+        "instructions": "how urgent",
+        "criteria": ["Low", "Medium", "High"],
+    }
+
+
+def test_choice_expands_a_name_list_into_criteria():
+    """The API wants {name: description}; a bare list is the short form."""
+    assert choice("pick", ["a", "none"]) == {
+        "type": "choice",
+        "instructions": "pick",
+        "criteria": {"a": None, "none": None},
+    }
+
+
+def test_choice_keeps_per_option_descriptions():
+    built = choice("pick", {"a": "the first", "none": None})
+    assert built["criteria"] == {"a": "the first", "none": None}
+
+
+def test_choice_rejects_too_many_options():
+    with pytest.raises(ValueError):
+        choice("pick", [f"option{i}" for i in range(256)])
+
+
+def test_noul_rejects_criteria_keys_other_than_true_false():
+    with pytest.raises(ValueError, match="true"):
+        noul("a statement", {"maybe": "..."})
+
+
+def test_noul_accepts_true_false_criteria():
+    built = noul("a statement", {"true": "it holds", "false": "it does not"})
+    assert built["criteria"] == {"true": "it holds", "false": "it does not"}
+
+
+def test_score_answer_keeps_the_legend():
+    answer = Answer.from_payload(
+        {
+            "type": "score",
+            "score": 1.5,
+            "confidence": 0.6,
+            "legend": {"0": "Low", "1": "High"},
+        }
+    )
+    assert answer.value == 1.5
+    assert answer.legend == {"0": "Low", "1": "High"}
 
 
 # ---- answers ----

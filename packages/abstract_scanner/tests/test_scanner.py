@@ -8,6 +8,7 @@ exercised for real while costing nothing.
 from __future__ import annotations
 
 import json
+import os
 
 import httpx
 import pytest
@@ -151,6 +152,7 @@ def test_choice_with_an_escape_option_does_not_warn(tmp_path):
         ('[questions.q]\ntype = "vibes"\ninstructions = "x"\n', "type must be"),
         ('[questions.q]\ntype = "noul"\ninstructions = "  "\n', "must not be empty"),
         ('[questions.q]\ntype = "choice"\ninstructions = "x"\n', "needs options"),
+        ('[questions.q]\ntype = "score"\ninstructions = "x"\n', "needs levels"),
         ("name = 'x'\n", "no .questions"),
     ],
 )
@@ -310,6 +312,31 @@ def test_scan_without_an_api_key_fails_cleanly(tmp_path, corpus, monkeypatch):
     assert "TYPESAFE_API_KEY" in result.stderr
 
 
+# Agent-written: Claude Opus 5.5 (Claude Code), 2026-11-15.
+# Checked by student: <how did you check it?>
+def test_main_reads_the_api_key_from_dotenv(tmp_path, monkeypatch):
+    """The installed command must find the key in .env, not only in the shell.
+
+    Calls ``main()`` (the console-script target), not ``app``, because the
+    bug was that ``app`` bypassed the .env loading. Runs in tmp_path with a
+    fake key, so the developer's real .env is never read.
+    """
+    # setenv first so monkeypatch restores the original state afterwards.
+    monkeypatch.setenv("TYPESAFE_API_KEY", "placeholder")
+    monkeypatch.delenv("TYPESAFE_API_KEY")
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / ".env").write_text("TYPESAFE_API_KEY=fake-key-from-dotenv\n")
+    (tmp_path / "s.toml").write_text(QUESTION_TOML)
+    monkeypatch.setattr("sys.argv", ["abstract-scanner", "validate", "-q", "s.toml"])
+
+    from abstract_scanner.cli import main
+
+    with pytest.raises(SystemExit) as stop:
+        main()
+    assert stop.value.code == 0
+    assert os.environ["TYPESAFE_API_KEY"] == "fake-key-from-dotenv"
+
+
 # ---- json question sets (agent-generated) ----
 
 
@@ -401,3 +428,68 @@ def test_guide_documents_every_question_type_the_loader_accepts():
     result = runner.invoke(app, ["guide", "--schema"])
     for kind in BUILDERS:
         assert f'"{kind}"' in result.stdout
+
+
+# ---- authored shapes map onto the API's own ----
+
+
+def test_choice_options_become_criteria(tmp_path):
+    path = tmp_path / "s.toml"
+    path.write_text(
+        '[questions.q]\ntype = "choice"\ninstructions = "pick"\n'
+        'options = ["a", "none"]\n'
+    )
+    built = load_question_set(path).questions["q"]
+    assert built["criteria"] == {"a": None, "none": None}
+    assert "options" not in built
+
+
+def test_choice_criteria_table_keeps_descriptions(tmp_path):
+    path = tmp_path / "s.toml"
+    path.write_text(
+        '[questions.q]\ntype = "choice"\ninstructions = "pick"\n'
+        '[questions.q.criteria]\na = "the first one"\nnone = "cannot tell"\n'
+    )
+    assert load_question_set(path).questions["q"]["criteria"] == {
+        "a": "the first one",
+        "none": "cannot tell",
+    }
+
+
+def test_score_levels_become_an_ordered_criteria_list(tmp_path):
+    path = tmp_path / "s.toml"
+    path.write_text(
+        '[questions.q]\ntype = "score"\ninstructions = "how much"\n'
+        'levels = ["Low", "Medium", "High"]\n'
+    )
+    assert load_question_set(path).questions["q"]["criteria"] == [
+        "Low",
+        "Medium",
+        "High",
+    ]
+
+
+def test_unsure_counts_as_an_escape_option(tmp_path):
+    """FYP26 v3 uses `unsure`; it must not be flagged as a forced choice."""
+    path = tmp_path / "s.toml"
+    path.write_text(
+        '[questions.q]\ntype = "choice"\ninstructions = "pick"\n'
+        'options = ["yes", "no", "unsure"]\n'
+    )
+    assert load_question_set(path).warnings == ()
+
+
+def test_a_run_where_every_record_fails_exits_nonzero(tmp_path, corpus):
+    """A scan that scanned nothing must not report success."""
+    qpath = tmp_path / "s.toml"
+    qpath.write_text(QUESTION_TOML)
+    out = tmp_path / "r.jsonl"
+
+    def broken(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(422, text="missing field")
+
+    with _client(handler=broken) as client:
+        manifest = scan(load_records(corpus), load_question_set(qpath), client, out)
+    assert manifest.n_scanned == 0
+    assert manifest.n_failed == 2
+    assert manifest.failures and "422" in manifest.failures[0]

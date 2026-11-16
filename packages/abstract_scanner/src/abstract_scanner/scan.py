@@ -38,6 +38,7 @@ class RunManifest:
     n_scanned: int = 0
     n_skipped_existing: int = 0
     n_failed: int = 0
+    failures: list[str] = field(default_factory=list)
     input_tokens: int = 0
     spent_usd: float = 0.0
     stopped_early: bool = False
@@ -107,6 +108,11 @@ def scan(
                 break
             except JevError as exc:
                 manifest.n_failed += 1
+                # Keep the first few verbatim: a run that fails on every
+                # record usually fails for one reason, and the manifest is
+                # what survives after the terminal scrolls away.
+                if len(manifest.failures) < 5:
+                    manifest.failures.append(f"{record.id}: {exc}")
                 logger.error("{}: {}", record.id, exc)
                 continue
 

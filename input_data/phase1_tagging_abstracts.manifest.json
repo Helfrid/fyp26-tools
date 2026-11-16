@@ -1,0 +1,28 @@
+{
+  "name": "phase1-tagging-abstracts",
+  "description": "The 250 abstracts assigned to students S1-S5 in FYP26 phase 1 (50 each, no overlap). Scanner input only: no student scores and no sampling strata are included here.",
+  "n_records": 250,
+  "n_per_student": {
+    "S1": 50,
+    "S2": 50,
+    "S3": 50,
+    "S4": 50,
+    "S5": 50
+  },
+  "n_missing_abstract": 0,
+  "source_files": [
+    "S1_items.json",
+    "S2_items.json",
+    "S3_items.json",
+    "S4_items.json",
+    "S5_items.json"
+  ],
+  "source_dir": "/Users/hh65/code/FYP26/data/fyp26_phase1",
+  "upstream_corpus": "fyp26-tagging-v1",
+  "upstream_seed": 20261023,
+  "upstream_pool": "/Users/hh65/code/literature-eval/data/degron_abstracts.json",
+  "upstream_pool_size": 2334,
+  "ground_truth_note": "Sampling strata are in the upstream manifest (item_strata); student scores live elsewhere and are deliberately not copied here.",
+  "sha256_16": "839476486b49b39d",
+  "built_at": "2026-11-15T17:42:54+00:00"
+}
