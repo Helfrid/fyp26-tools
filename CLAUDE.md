@@ -57,6 +57,8 @@ never without `--budget`.
 packages/common_utils/      logging setup
 packages/jev_client/        budget-guarded access to the Jev API
 packages/abstract_scanner/  the scanning CLI
+notebooks/                  marimo notebooks (Part 6 analysis)
+.claude/skills/             skills loaded when the task calls for them
 ```
 
 The workspace root is virtual (`package = false`): it pins the dev toolchain
@@ -76,6 +78,19 @@ uv run ty check packages
 Tests drive a real client over a mock transport, so budget accounting and
 resume behaviour are tested for real at zero cost. **No test may make a
 network call or need an API key.** Keep it that way.
+
+## Notebooks
+
+Notebooks are **marimo** notebooks in `notebooks/`, as plain `.py` files —
+reactive, diffable, and free of stale state. Open one with:
+
+```bash
+uv run marimo edit notebooks/abstract_agreement.py
+```
+
+Never edit a notebook file on disk while its server is running: the kernel owns
+the file and will overwrite you. See `.claude/skills/fyp26-notebook/SKILL.md`
+before working on the Part 6 analysis.
 
 ## Design rules that are load-bearing
 

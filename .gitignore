@@ -26,3 +26,6 @@ results/
 # Scan manifests belong with the results they describe, not in git. The
 # corpus provenance manifest in input_data/ is NOT output and IS committed.
 results/*.manifest.json
+
+# marimo session cache
+__marimo__/
