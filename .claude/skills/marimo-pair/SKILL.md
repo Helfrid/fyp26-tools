@@ -28,18 +28,23 @@ Everything below goes through `marimo pair`, which is part of marimo itself.
 uv run marimo pair notebook list
 ```
 
-This prints JSON with a `url` and a `session_id` for every open notebook. You
-need both for every later command.
+This prints JSON with a `url` and a `session_id` for every **open** notebook.
+You need both for every later command.
 
-If it reports no sessions, no notebook is open. Ask the student to open one —
-this is their notebook, so let them start it:
+A session exists only while the notebook is open in a browser tab. A running
+server with no tab open reports `"notebooks": []`, even if you pass its `--url`
+directly — the server is not the session, the tab is.
+
+If it reports no sessions, ask the student to open the notebook. It is theirs,
+so let them start it:
 
 ```bash
-uv run marimo edit notebooks/abstract_agreement.py
+uv run marimo edit notebooks/abstract_agreement.py --no-token
 ```
 
-If you need to start it yourself, add `--no-token` so the session registers and
-`notebook list` can find it.
+`--no-token` is not optional here: without it the session does not register
+and `notebook list` will not find it, however long you wait. The server is
+localhost-only, so this is safe on a personal laptop.
 
 If several sessions are listed, **ask which one** rather than guessing. And if
 a command later reports an unknown session, the notebook was closed or

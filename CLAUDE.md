@@ -85,8 +85,14 @@ Notebooks are **marimo** notebooks in `notebooks/`, as plain `.py` files —
 reactive, diffable, and free of stale state. Open one with:
 
 ```bash
-uv run marimo edit notebooks/abstract_agreement.py
+uv run marimo edit notebooks/abstract_agreement.py --no-token
 ```
+
+`--no-token` matters: without it the session does not register, and
+`marimo pair notebook list` cannot find it. The server is localhost-only.
+
+A session exists only while the notebook is **open in a browser tab**. A
+running server with no tab open has no session and cannot be paired with.
 
 Never edit a notebook file on disk while its server is running: the kernel owns
 the file and will overwrite you. See `.claude/skills/fyp26-notebook/SKILL.md`

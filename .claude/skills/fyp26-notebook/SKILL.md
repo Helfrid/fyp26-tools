@@ -15,11 +15,19 @@ not JSON. It diffs properly in git, and the student can read it in any editor.
 ## Starting it
 
 ```bash
-uv run marimo edit notebooks/abstract_agreement.py
+uv run marimo edit notebooks/abstract_agreement.py --no-token
 ```
 
 That opens a browser tab. The notebook stays running; the student edits cells
 there, not in the file on disk.
+
+`--no-token` is required for pairing: without it the session does not register
+and `marimo pair notebook list` returns nothing. The server listens on
+localhost only.
+
+**The browser tab is the session.** A running server with no tab open cannot be
+paired with. If the student starts Claude Code first and asks for help with the
+notebook, the first thing to check is whether the notebook is actually open.
 
 To check something without opening a browser:
 
