@@ -46,11 +46,21 @@ line-length = 88
 target-version = "py312"
 src = ["packages/*/src", "src"]
 
+[tool.ruff.format]
+# marimo writes notebooks/*.py itself, in its own style. Formatting them here
+# only makes the kernel rewrite the file the next time a student opens it, so
+# every clone starts with a spurious diff. Linting still applies.
+exclude = ["notebooks/*.py"]
+
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
 
 [tool.ruff.lint.per-file-ignores]
 "**/tests/*" = ["E501"]
+# A marimo cell renders its last expression, so a bare name is the output,
+# not a mistake. F841: a placeholder cell may assign a name the student has
+# not used yet.
+"notebooks/*.py" = ["B018", "F841"]
 
 [tool.ty.environment]
 python-version = "3.12"

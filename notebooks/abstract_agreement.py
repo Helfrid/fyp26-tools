@@ -6,8 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     # Part 6 — How well did the classifier agree with you?
 
     You classified 50 abstracts by hand. The classifier answered the same four
@@ -29,8 +28,7 @@ def _(mo):
     one cell.** If you want to try a second version of something, give it a new
     name.
     ///
-    """
-    )
+    """)
     return
 
 
@@ -48,14 +46,12 @@ def _():
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 1. Load the two sets of answers
 
     `results/jev_tagging_v3.jsonl` — one JSON object per abstract, from Part 5.
     `abstracts_annotated/` — the hand classifications, one file per student.
-    """
-    )
+    """)
     return
 
 
@@ -69,7 +65,7 @@ def _(Path):
     ANNOTATIONS = ROOT / "abstracts_annotated"
 
     FIELDS = ["is_tagging_paper", "tag_type", "locus_strategy", "terminus"]
-    return ANNOTATIONS, FIELDS, MY_STUDENT_ID, RESULTS, ROOT
+    return ANNOTATIONS, FIELDS, MY_STUDENT_ID, RESULTS
 
 
 @app.cell
@@ -91,7 +87,7 @@ def _(Path, RESULTS, json, pl):
     model = load_model_answers(RESULTS)
     print(model.shape)
     model.head()
-    return (model,)
+    return
 
 
 @app.cell
@@ -113,13 +109,12 @@ def _(ANNOTATIONS, MY_STUDENT_ID, Path, pl):
     def load_my_annotations(directory: Path, student: str) -> pl.DataFrame: ...
 
     mine = load_my_annotations(ANNOTATIONS, MY_STUDENT_ID)
-    return (mine,)
+    return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 2. Join them
 
     You can only compare abstracts that appear in both sets. Join on the identifier
@@ -128,13 +123,12 @@ def _(mo):
     **Check the row count after joining.** If it is not 50, find out why before
     going further — a silent loss of rows is the most common way an analysis like
     this goes wrong.
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(mine, model):
+def _():
     # TODO: join `mine` and `model` into one table, one row per abstract,
     # with a column pair per field (yours and the model's).
     #
@@ -147,8 +141,7 @@ def _(mine, model):
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 3. Apply the skip rule
 
     When you answered `no` to `is_tagging_paper`, you were told to leave the other
@@ -163,8 +156,7 @@ def _(mo):
 
     Decide what to do about this, apply it, and record the decision — it is a real
     methodological choice and belongs in your report.
-    """
-    )
+    """)
     return
 
 
@@ -172,34 +164,31 @@ def _(mo):
 def _(paired):
     # TODO: handle the skip rule before comparing the three dependent fields.
     scored = paired
-    return (scored,)
+    return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 4. Agreement on `is_tagging_paper`
 
     Start with the screening decision, which every abstract has.
 
     Begin with the simplest number: in what fraction of abstracts did you and the
     classifier give the same answer?
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(scored):
+def _():
     # TODO: overall agreement on is_tagging_paper.
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     /// warning | Why that number on its own is not enough
     Your 50 abstracts were drawn deliberately: roughly 8 tagging papers, 2
     ambiguous, and 40 negatives. A classifier that answered `no` to everything
@@ -209,15 +198,13 @@ def _(mo):
     You need to know **which** answers it got right and **what kind** of
     mistakes it made. That is what the next section is for.
     ///
-    """
-    )
+    """)
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 5. Where does it disagree?
 
     Build a confusion matrix: your answer against the model's, counting every
@@ -231,19 +218,18 @@ def _(mo):
 
     For a screening tool that feeds into full-text reading, these costs are not
     equal. Which matters more here, and why?
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(scored):
+def _():
     # TODO: confusion matrix for is_tagging_paper.
     return
 
 
 @app.cell
-def _(scored):
+def _():
     # TODO: pull out the disagreements and READ THE ABSTRACTS.
     #
     # This is the most valuable half-hour in this notebook. For each disagreement:
@@ -257,8 +243,7 @@ def _(scored):
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 6. The other three fields
 
     `tag_type`, `locus_strategy` and `terminus` are only meaningful on the subset
@@ -266,21 +251,22 @@ def _(mo):
     agreement — an agreement figure computed on six abstracts means something very
     different from one computed on forty, and a reader cannot tell them apart
     unless you say so.
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(FIELDS, scored):
+def _(FIELDS):
     # TODO: agreement for each of the three dependent fields, with n.
+    # The three dependent fields are FIELDS[1:]; FIELDS[0] was section 4.
+    for field in FIELDS[1:]:
+        print(field, "— agreement: ?, n = ?")
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 7. Does confidence predict correctness?
 
     The classifier returns a confidence for every answer. A useful classifier is
@@ -290,21 +276,19 @@ def _(mo):
     Compare the confidence on the answers it got right with the confidence on the
     ones it got wrong. Is there a separation? Is there a threshold above which it
     is reliable enough to trust without checking?
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(scored):
+def _():
     # TODO: confidence on agreements vs disagreements.
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 8. Your first result figure
 
     One figure that answers: **how well did the classifier reproduce my
@@ -316,29 +300,31 @@ def _(mo):
 
     Save it to `figures/` as both PNG and PDF (PDF is vector, so it stays sharp in
     your report).
-    """
-    )
+    """)
     return
 
 
 @app.cell
-def _(ROOT, plt, scored):
-    # TODO: your figure.
+def _(plt):
+    # TODO: your figure. This is an empty one to start from.
     #
-    # figures = ROOT / "figures"
-    # figures.mkdir(exist_ok=True)
-    # fig.savefig(figures / "abstract_agreement.png", dpi=300, bbox_inches="tight")
-    # fig.savefig(figures / "abstract_agreement.pdf", bbox_inches="tight")
-    #
-    # In marimo, end the cell with the figure object itself (not plt.show()) and
-    # it renders as the cell output.
+    # When you are happy with it, save both formats:
+    #   figures = ROOT / "figures"
+    #   figures.mkdir(exist_ok=True)
+    #   fig.savefig(figures / "abstract_agreement.png", dpi=300, bbox_inches="tight")
+    #   fig.savefig(figures / "abstract_agreement.pdf", bbox_inches="tight")
+    fig, ax = plt.subplots(figsize=(7, 4.5))
+    ax.set_title("TODO: how well did the classifier reproduce my answers?")
+
+    # In marimo the cell's last expression is its output, so ending on `fig`
+    # draws it. Do not call plt.show().
+    fig
     return
 
 
 @app.cell(hide_code=True)
 def _(mo):
-    mo.md(
-        r"""
+    mo.md(r"""
     ## 9. Write down what you found
 
     Before you close this notebook, answer these in a few sentences each. They are
@@ -355,8 +341,7 @@ def _(mo):
 
     Question 3 is the one that matters most. A disagreement where you were wrong
     is not a failure of the experiment; it is the experiment working.
-    """
-    )
+    """)
     return
 
 
